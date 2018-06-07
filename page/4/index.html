@@ -147,6 +147,37 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2016/05/17/iOS/iOS_UIAlertController选项字体修改/">
+                UIAlertController选项字体修改
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2016-05-17</span>
+            
+            
+            
+                <span class="category">
+                    <a href="/categories/iOS/">iOS</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="UIAlertController选项字体修改"><a href="#UIAlertController选项字体修改" class="headerlink" title="UIAlertController选项字体修改"></a>UIAlertController选项字体修改</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">_addMateAlert = [UIAlertController alertControllerWithTitle:@&quot;快加入你的另一半吧&quot; message:@&quot;在此功能内，你的另一半可以提醒你去完成计划，在你计划完成到一定阶段时你还可以向他许愿，以资鼓励～&quot; preferredStyle: UIAlertControllerStyleAlert];</span><br><span class="line">UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@&quot;以后提醒我&quot; style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) &#123;</span><br><span class="line">    NSLog(@&quot;以后提醒我～&quot;);</span><br><span class="line">&#125;];</span><br><span class="line">UIAlertAction *deleteAction = [UIAlertAction actionWithTitle:@&quot;邀请你的另一半&quot; style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) &#123;</span><br><span class="line">    NSLog(@&quot;邀请你的另一半&quot;);</span><br><span class="line">&#125;];</span><br><span class="line"></span><br><span class="line">[cancelAction setValue:[UIColor cyanColor] forKey:@&quot;titleTextColor&quot;];</span><br><span class="line">[deleteAction setValue:kSetColor_Hex(@&quot;ff134a&quot;) forKey:@&quot;titleTextColor&quot;];</span><br><span class="line">[deleteAction setValue:[UIColor yellowColor] forKey:@&quot;titleTextColor&quot;];</span><br><span class="line"></span><br><span class="line">[_addMateAlert addAction:cancelAction];</span><br><span class="line">[_addMateAlert addAction:deleteAction];</span><br></pre></td></tr></table></figure>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2016/05/16/iOS/iOS_9.3真机测试/">
                 9.3真机测试
             </a>
@@ -461,38 +492,6 @@
 
 </div>
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/01/24/Mac/Mac_查看隐藏文件/">
-                查看隐藏文件
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2016-01-24</span>
-            
-            
-            
-                <span class="category">
-                    <a href="/categories/Mac/">Mac</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <h1 id="查看隐藏文件"><a href="#查看隐藏文件" class="headerlink" title="查看隐藏文件"></a>查看隐藏文件</h1><h3 id="有一些人（比如笔者）总是喜欢捣鼓-Mac-上面的任何文件，尤其是那些被隐藏起来的。所以，我总是喜欢将系统默认的隐藏文件显示出来。熟悉-Windows-系统的用户可能只需要在文件选项菜单那里打上几个勾就可以做到了，那么对于-Mac-用户呢？"><a href="#有一些人（比如笔者）总是喜欢捣鼓-Mac-上面的任何文件，尤其是那些被隐藏起来的。所以，我总是喜欢将系统默认的隐藏文件显示出来。熟悉-Windows-系统的用户可能只需要在文件选项菜单那里打上几个勾就可以做到了，那么对于-Mac-用户呢？" class="headerlink" title="有一些人（比如笔者）总是喜欢捣鼓 Mac 上面的任何文件，尤其是那些被隐藏起来的。所以，我总是喜欢将系统默认的隐藏文件显示出来。熟悉 Windows 系统的用户可能只需要在文件选项菜单那里打上几个勾就可以做到了，那么对于 Mac 用户呢？"></a>有一些人（比如笔者）总是喜欢捣鼓 Mac 上面的任何文件，尤其是那些被隐藏起来的。所以，我总是喜欢将系统默认的隐藏文件显示出来。熟悉 Windows 系统的用户可能只需要在文件选项菜单那里打上几个勾就可以做到了，那么对于 Mac 用户呢？</h3><h3 id="如何让-Finder-显示隐藏文件和文件夹"><a href="#如何让-Finder-显示隐藏文件和文件夹" class="headerlink" title="如何让 Finder 显示隐藏文件和文件夹"></a>如何让 Finder 显示隐藏文件和文件夹</h3><h3 id="第一步：打开「终端」应用程序。"><a href="#第一步：打开「终端」应用程序。" class="headerlink" title="第一步：打开「终端」应用程序。"></a>第一步：打开「终端」应用程序。</h3><h3 id="第二步：输入如下命令："><a href="#第二步：输入如下命令：" class="headerlink" title="第二步：输入如下命令："></a>第二步：输入如下命令：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder</span><br></pre></td></tr></table></figure>
-<h3 id="第三步：按下「Return」键确认。"><a href="#第三步：按下「Return」键确认。" class="headerlink" title="第三步：按下「Return」键确认。"></a>第三步：按下「Return」键确认。</h3><h3 id="现在你将会在-Finder-窗口中看到那些隐藏的文件和文件夹了。"><a href="#现在你将会在-Finder-窗口中看到那些隐藏的文件和文件夹了。" class="headerlink" title="现在你将会在 Finder 窗口中看到那些隐藏的文件和文件夹了。"></a>现在你将会在 Finder 窗口中看到那些隐藏的文件和文件夹了。</h3><h3 id="如果你想再次隐藏原本的隐藏文件和文件夹的话，将上述命令替换成"><a href="#如果你想再次隐藏原本的隐藏文件和文件夹的话，将上述命令替换成" class="headerlink" title="如果你想再次隐藏原本的隐藏文件和文件夹的话，将上述命令替换成"></a>如果你想再次隐藏原本的隐藏文件和文件夹的话，将上述命令替换成</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder</span><br></pre></td></tr></table></figure>
-<h3 id="即可。"><a href="#即可。" class="headerlink" title="即可。"></a>即可。</h3>
-        </div>
-    
-
-</div>
-            
         </section>
     </div>
 </div>
@@ -535,6 +534,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2018/06/07/技术/技术_Jenkins FAQ/">Jenkins FAQ</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2017/10/04/iOS/iOS_面试题总结/">面试题总结</a>
             </li>
             
@@ -544,10 +547,6 @@
             
             <li>
                 <a class="footer-post" href="/2017/08/01/iOS/iOS_tableView的一些问题/">tableView的一些问题</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/07/21/技术/技术_SVN基本命令行操作/">SVN基本命令行操作</a>
             </li>
             
         </ul>
