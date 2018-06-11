@@ -147,6 +147,60 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2016/01/25/iOS/iOS_Cocoapods安装与使用/">
+                Cocoapods安装与使用
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2016-01-25</span>
+            
+            
+            
+                <span class="category">
+                    <a href="/categories/iOS/">iOS</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="Cocoapods安装与使用"><a href="#Cocoapods安装与使用" class="headerlink" title="Cocoapods安装与使用"></a>Cocoapods安装与使用</h1><h3 id="本文将介绍CocoaPods从安装到使用过程。"><a href="#本文将介绍CocoaPods从安装到使用过程。" class="headerlink" title="本文将介绍CocoaPods从安装到使用过程。"></a>本文将介绍CocoaPods从安装到使用过程。</h3><h3 id="CocoaPods是一个负责管理iOS项目中第三方开源代码的工具。使用CocoaPods可以为我们节省设置和更新第三方开源库的时间。-下面将分为两部分来-讲述如何安装和使用CocoaPods。"><a href="#CocoaPods是一个负责管理iOS项目中第三方开源代码的工具。使用CocoaPods可以为我们节省设置和更新第三方开源库的时间。-下面将分为两部分来-讲述如何安装和使用CocoaPods。" class="headerlink" title="CocoaPods是一个负责管理iOS项目中第三方开源代码的工具。使用CocoaPods可以为我们节省设置和更新第三方开源库的时间。 下面将分为两部分来### 讲述如何安装和使用CocoaPods。"></a>CocoaPods是一个负责管理iOS项目中第三方开源代码的工具。使用CocoaPods可以为我们节省设置和更新第三方开源库的时间。 下面将分为两部分来### 讲述如何安装和使用CocoaPods。</h3><h3 id="一、安装CocoaPods"><a href="#一、安装CocoaPods" class="headerlink" title="一、安装CocoaPods"></a>一、安装CocoaPods</h3><h4 id="先使用下面命令升级Ruby版本："><a href="#先使用下面命令升级Ruby版本：" class="headerlink" title="先使用下面命令升级Ruby版本："></a>先使用下面命令升级Ruby版本：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gem update --system</span><br><span class="line">sudo gem update -n /usr/local/bin --system(更新到新 Mac系统后pod的安装路径变为这个)</span><br></pre></td></tr></table></figure>
+<h4 id="国内ruby源更新为-http-gems-ruby-china-org"><a href="#国内ruby源更新为-http-gems-ruby-china-org" class="headerlink" title="国内ruby源更新为 http://gems.ruby-china.org"></a>国内ruby源更新为 <code>http://gems.ruby-china.org</code></h4><h4 id="更新命令"><a href="#更新命令" class="headerlink" title="更新命令"></a>更新命令</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">gem source --remove https://gems.ruby-china.org</span><br><span class="line">gem source -a http://gems.ruby-china.org</span><br></pre></td></tr></table></figure>
+<h4 id="等待更新完成后，然后通过gem命令来下载安装CocoaPods："><a href="#等待更新完成后，然后通过gem命令来下载安装CocoaPods：" class="headerlink" title="等待更新完成后，然后通过gem命令来下载安装CocoaPods："></a>等待更新完成后，然后通过gem命令来下载安装CocoaPods：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gem install cocoapods</span><br><span class="line">sudo gem install -n /usr/local/bin cocoapods(更新到新 Mac系统后pod的安装路径变为这个)</span><br><span class="line">sudo gem install -n /usr/local/bin cocoapods --pre(安装最新测试版)</span><br></pre></td></tr></table></figure>
+<h4 id="安装完毕后调用下面命令，进行CocoaPods设置："><a href="#安装完毕后调用下面命令，进行CocoaPods设置：" class="headerlink" title="安装完毕后调用下面命令，进行CocoaPods设置："></a>安装完毕后调用下面命令，进行CocoaPods设置：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod setup</span><br></pre></td></tr></table></figure>
+<h4 id="执行完成上述命令后，表示安装成功！下面将讲述如何使用CocoaPods。"><a href="#执行完成上述命令后，表示安装成功！下面将讲述如何使用CocoaPods。" class="headerlink" title="执行完成上述命令后，表示安装成功！下面将讲述如何使用CocoaPods。"></a>执行完成上述命令后，表示安装成功！下面将讲述如何使用CocoaPods。</h4><h3 id="二、使用CocoaPods"><a href="#二、使用CocoaPods" class="headerlink" title="二、使用CocoaPods"></a>二、使用CocoaPods</h3><h4 id="打开终端，使用cd命令定位到需要使用CocoaPods的项目根路径。如："><a href="#打开终端，使用cd命令定位到需要使用CocoaPods的项目根路径。如：" class="headerlink" title="打开终端，使用cd命令定位到需要使用CocoaPods的项目根路径。如："></a>打开终端，使用cd命令定位到需要使用CocoaPods的项目根路径。如：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /Users/username/Documents/Projects/Demo</span><br></pre></td></tr></table></figure>
+<h4 id="先考虑项目中需要引用哪些库，然后在通过search命令来查找库的信息，如需要加入JSONKit，那可以如下写法："><a href="#先考虑项目中需要引用哪些库，然后在通过search命令来查找库的信息，如需要加入JSONKit，那可以如下写法：" class="headerlink" title="先考虑项目中需要引用哪些库，然后在通过search命令来查找库的信息，如需要加入JSONKit，那可以如下写法："></a>先考虑项目中需要引用哪些库，然后在通过search命令来查找库的信息，如需要加入JSONKit，那可以如下写法：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod search JSONKit</span><br></pre></td></tr></table></figure>
+<h4 id="命令执行后会得到如下结果："><a href="#命令执行后会得到如下结果：" class="headerlink" title="命令执行后会得到如下结果："></a>命令执行后会得到如下结果：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-&gt; JSONKit (1.5pre)</span><br><span class="line">A Very High Performance Objective-C JSON Library.</span><br><span class="line">pod &apos;JSONKit&apos;, &apos;~&gt; 1.5pre&apos;</span><br><span class="line">- Homepage: https://github.com/johnezang/JSONKit</span><br><span class="line">- Source:   https://github.com/johnezang/JSONKit.git</span><br><span class="line">- Versions: 1.5pre, 1.4 [master repo]</span><br></pre></td></tr></table></figure>
+<h4 id="其中的pod-‘JSONKit’-‘-gt-1-5pre’是待会要写入到Podfile中的信息。如果已经知道这些信息，那可以直接省略此步。直接进行下面的步骤。"><a href="#其中的pod-‘JSONKit’-‘-gt-1-5pre’是待会要写入到Podfile中的信息。如果已经知道这些信息，那可以直接省略此步。直接进行下面的步骤。" class="headerlink" title="其中的pod ‘JSONKit’, ‘~&gt; 1.5pre’是待会要写入到Podfile中的信息。如果已经知道这些信息，那可以直接省略此步。直接进行下面的步骤。"></a>其中的<code>pod ‘JSONKit’, ‘~&gt; 1.5pre’</code>是待会要写入到Podfile中的信息。如果已经知道这些信息，那可以直接省略此步。直接进行下面的步骤。</h4><h4 id="得到必要的库信息后，现在需要在项目中建立Podfile文件。通过下面的命令："><a href="#得到必要的库信息后，现在需要在项目中建立Podfile文件。通过下面的命令：" class="headerlink" title="得到必要的库信息后，现在需要在项目中建立Podfile文件。通过下面的命令："></a>得到必要的库信息后，现在需要在项目中建立Podfile文件。通过下面的命令：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch Podfile</span><br></pre></td></tr></table></figure>
+<h4 id="然后编辑Podfile文件，命令如下："><a href="#然后编辑Podfile文件，命令如下：" class="headerlink" title="然后编辑Podfile文件，命令如下："></a>然后编辑Podfile文件，命令如下：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open -e Podfile</span><br></pre></td></tr></table></figure>
+<h4 id="在弹出的编辑界面中输入下面内容："><a href="#在弹出的编辑界面中输入下面内容：" class="headerlink" title="在弹出的编辑界面中输入下面内容："></a>在弹出的编辑界面中输入下面内容：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">platform :ios</span><br><span class="line">pod &apos;JSONKit&apos;, &apos;~&gt; 1.5pre&apos;</span><br></pre></td></tr></table></figure>
+<h4 id="然后调用下面命令来进行初始化："><a href="#然后调用下面命令来进行初始化：" class="headerlink" title="然后调用下面命令来进行初始化："></a>然后调用下面命令来进行初始化：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod install</span><br></pre></td></tr></table></figure>
+<h4 id="运行完毕后，原本的项目目录会多出一些文件。如图："><a href="#运行完毕后，原本的项目目录会多出一些文件。如图：" class="headerlink" title="运行完毕后，原本的项目目录会多出一些文件。如图："></a>运行完毕后，原本的项目目录会多出一些文件。如图：</h4><p><img src="http://7xqedu.com1.z0.glb.clouddn.com/YmxvZ18%3DMTYwMTI1MDE%3D.png_s" alt=""></p>
+<h4 id="多了-xcworkspace-pod等文件。这是pod生成的项目管理文件，打开LibDemo-xcworkspace-项目文件，在Xcode里看到是这样的目录结构："><a href="#多了-xcworkspace-pod等文件。这是pod生成的项目管理文件，打开LibDemo-xcworkspace-项目文件，在Xcode里看到是这样的目录结构：" class="headerlink" title="多了*.xcworkspace pod等文件。这是pod生成的项目管理文件，打开LibDemo.xcworkspace 项目文件，在Xcode里看到是这样的目录结构："></a>多了*.xcworkspace pod等文件。这是pod生成的项目管理文件，打开LibDemo.xcworkspace 项目文件，在Xcode里看到是这样的目录结构：</h4><p><img src="http://7xqedu.com1.z0.glb.clouddn.com/YmxvZ18%3DMTYwMTI1MDI%3D.png_s" alt=""></p>
+<h4 id="这里要注意的一点是，如果不调用创建Podfile命令就直接调用pod-install命令。将会提示"><a href="#这里要注意的一点是，如果不调用创建Podfile命令就直接调用pod-install命令。将会提示" class="headerlink" title="这里要注意的一点是，如果不调用创建Podfile命令就直接调用pod install命令。将会提示"></a>这里要注意的一点是，如果不调用创建Podfile命令就直接调用<code>pod install</code>命令。将会提示</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[!] No &apos;Podfile&apos; found in the current working directory.</span><br></pre></td></tr></table></figure>
+<h4 id="如果Podfile中添加了新库，可以使用下面命令进行更新："><a href="#如果Podfile中添加了新库，可以使用下面命令进行更新：" class="headerlink" title="如果Podfile中添加了新库，可以使用下面命令进行更新："></a>如果Podfile中添加了新库，可以使用下面命令进行更新：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod update</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>现在，你的所有第三方库都已经下载完成并且设置好了编译参数和依赖，你只需要记住如下2点即可：</p>
+</blockquote>
+<blockquote>
+<p>1 使用CocoaPods生成的 .xcworkspace 文件来打开工程，而不是以前的 .xcodeproj 文件。<br>2 每次更改了Podfile文件，你需要重新执行一次<code>pod install</code>或者<code>pod update</code>命令 。</p>
+</blockquote>
+<h4 id="cocoapods至此配置完毕，但是你会发现你并不能在项目中找到你导入的库，你需要在Build-Settings-gt-Search-Header的最后一项中添加-PODS-ROOT-后面选择recursive就可以了。"><a href="#cocoapods至此配置完毕，但是你会发现你并不能在项目中找到你导入的库，你需要在Build-Settings-gt-Search-Header的最后一项中添加-PODS-ROOT-后面选择recursive就可以了。" class="headerlink" title="cocoapods至此配置完毕，但是你会发现你并不能在项目中找到你导入的库，你需要在Build Settings-&gt;Search Header的最后一项中添加$(PODS_ROOT),后面选择recursive就可以了。"></a>cocoapods至此配置完毕，但是你会发现你并不能在项目中找到你导入的库，你需要在<code>Build Settings-&gt;Search Header</code>的最后一项中添加<code>$(PODS_ROOT)</code>,后面选择<code>recursive</code>就可以了。</h4><p><img src="http://7xqedu.com1.z0.glb.clouddn.com/YmxvZ18%3DMTYwMTI1MDM%3D.png_s" alt=""></p>
+<h4 id="如果pod-setup太慢，可以直接"><a href="#如果pod-setup太慢，可以直接" class="headerlink" title="如果pod setup太慢，可以直接"></a>如果<code>pod setup</code>太慢，可以直接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/CocoaPods/Specs.git</span><br></pre></td></tr></table></figure>
+<h4 id="clone成功之后将文件夹外层改名为master，移动至～-cocoapods-repos"><a href="#clone成功之后将文件夹外层改名为master，移动至～-cocoapods-repos" class="headerlink" title="clone成功之后将文件夹外层改名为master，移动至～/.cocoapods/repos/"></a>clone成功之后将文件夹外层改名为master，移动至～/.cocoapods/repos/</h4><h4 id="如果pod-search失败，可执行"><a href="#如果pod-search失败，可执行" class="headerlink" title="如果pod search失败，可执行"></a>如果<code>pod search</code>失败，可执行</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm ~/Library/Caches/CocoaPods/search_index.json</span><br></pre></td></tr></table></figure>
+<h4 id="然后再尝试pod-search"><a href="#然后再尝试pod-search" class="headerlink" title="然后再尝试pod search"></a>然后再尝试<code>pod search</code></h4>
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2016/01/24/Mac/Mac_查看隐藏文件/">
                 查看隐藏文件
             </a>
@@ -465,45 +519,6 @@
 
 </div>
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/01/21/iOS/iOS_UIButton响应传参数/">
-                UIButton响应传参数
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2016-01-21</span>
-            
-            
-            
-                <span class="category">
-                    <a href="/categories/iOS/">iOS</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <h1 id="UIButton响应传参数"><a href="#UIButton响应传参数" class="headerlink" title="UIButton响应传参数"></a>UIButton响应传参数</h1><h3 id="开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，"><a href="#开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，" class="headerlink" title="开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，"></a>开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;</span><br></pre></td></tr></table></figure>
-<h3 id="方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。-我们以UITableView-为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是-如何在点击UIButton时获得cell。可以通过以下两种方法实现。"><a href="#方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。-我们以UITableView-为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是-如何在点击UIButton时获得cell。可以通过以下两种方法实现。" class="headerlink" title="方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。 我们以UITableView 为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是 如何在点击UIButton时获得cell。可以通过以下两种方法实现。"></a>方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。 我们以UITableView 为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是 如何在点击UIButton时获得cell。可以通过以下两种方法实现。</h3><h3 id="使用delegate-首先，在CustomCell类文件中定义protocol，有如下定义"><a href="#使用delegate-首先，在CustomCell类文件中定义protocol，有如下定义" class="headerlink" title="使用delegate 首先，在CustomCell类文件中定义protocol，有如下定义"></a>使用delegate 首先，在CustomCell类文件中定义protocol，有如下定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@protocol CustomCellProtocol</span><br><span class="line">- (void)customCell:(CustomCell *)cell didTapButton:(UIButton *)button;</span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
-<h3 id="将UIButton的响应加在CustomCell文件中，比如这个响应叫做"><a href="#将UIButton的响应加在CustomCell文件中，比如这个响应叫做" class="headerlink" title="将UIButton的响应加在CustomCell文件中，比如这个响应叫做"></a>将UIButton的响应加在CustomCell文件中，比如这个响应叫做</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (IBAction)buttonTarget:(id)sender;</span><br></pre></td></tr></table></figure>
-<h3 id="那么在点击button时，就会调用这个方法。这个方法可以实现如下，"><a href="#那么在点击button时，就会调用这个方法。这个方法可以实现如下，" class="headerlink" title="那么在点击button时，就会调用这个方法。这个方法可以实现如下，"></a>那么在点击button时，就会调用这个方法。这个方法可以实现如下，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (IBAction)buttonTarget:(id)sender &#123;</span><br><span class="line">    if ([self.delegate respondsToSelector:@selector(customCell:didTapButton:)]) &#123;</span><br><span class="line">        [self.delegate performSelector:@selector(customCell:didTapButton:) withObject:self   withObject:self.button];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。"><a href="#然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。" class="headerlink" title="然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。"></a>然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。</h3><h3 id="在ViewController中添加响应-第二种方法时在"><a href="#在ViewController中添加响应-第二种方法时在" class="headerlink" title="在ViewController中添加响应 第二种方法时在"></a>在ViewController中添加响应 第二种方法时在</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;</span><br></pre></td></tr></table></figure>
-<h3 id="方法中直接给UIButton添加响应。实现如下，"><a href="#方法中直接给UIButton添加响应。实现如下，" class="headerlink" title="方法中直接给UIButton添加响应。实现如下，"></a>方法中直接给UIButton添加响应。实现如下，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-(UITableViewCell *)tableView:(UITableView *)atableView cellForRowAtIndexPath:(NSIndexPath *)indexPath &#123;</span><br><span class="line">    CustomCell *cell = [atableView         dequeueReusableCellWithIdentifier:@&quot;CustomCell&quot;];</span><br><span class="line">    [cell.button addTarget:self action:@selector(didTapButton:)   forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">    return cell;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="那么点击button时就会调用"><a href="#那么点击button时就会调用" class="headerlink" title="那么点击button时就会调用"></a>那么点击button时就会调用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)didTapButton:(UIButton *)sender</span><br></pre></td></tr></table></figure>
-<h3 id="剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，"><a href="#剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，" class="headerlink" title="剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，"></a>剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- (void)didTapButton:(UIButton *)sender &#123;</span><br><span class="line">    CGRect buttonRect = sender.frame;</span><br><span class="line">    for (CustomCell *cell in [tableView visibleCells]) &#123;</span><br><span class="line">        if (CGRectIntersectsRect(buttonRect, cell.frame)) &#123;</span><br><span class="line">            //cell就是所要获得的</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="http://innovatence.com/?p=196" target="_blank" rel="noopener">原文链接</a></p>
-
-        </div>
-    
-
-</div>
-            
         </section>
     </div>
 </div>
@@ -546,6 +561,10 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2018/06/10/Linux/Linux_防火墙Firewalld/">防火墙Firewalld</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2018/06/07/技术/技术_Jenkins FAQ/">Jenkins FAQ</a>
             </li>
             
@@ -555,10 +574,6 @@
             
             <li>
                 <a class="footer-post" href="/2017/10/04/iOS/iOS_日常整理/">日常整理</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/08/01/iOS/iOS_tableView的一些问题/">tableView的一些问题</a>
             </li>
             
         </ul>
@@ -580,11 +595,11 @@
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/Linux/">Linux</a>
+            <a class="footer-post" href="/categories/Windows/">Windows</a>
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/Windows/">Windows</a>
+            <a class="footer-post" href="/categories/Linux/">Linux</a>
         </li>
         
     </ul>
