@@ -10,7 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="vim基本操作用户名:目录 用户名$ vim 文件名命令模式 esc输入模式 i底行模式 ：＃yy -&amp;gt;复制＃行＃dd -&amp;gt; 删除＃行p -&amp;gt; 粘贴$ -&amp;gt; 行首0 -&amp;gt; 行尾">
+        <meta name="description" content="Nginx部署静态页出现中文乱码在nginx服务器用vim编了个测试HTML网页。。。。浏览器访问乱码，编辑了下nginx的配置文件nginx.conf添加了一行charset utf-8;12345678910111213141516171819http &amp;#123;    include    ">
     
 
     <!--Author-->
@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="vim基本操作"/>
+        <meta property="og:title" content="Nginx部署静态页出现中文乱码"/>
     
 
     <!--Open Graph Description-->
@@ -42,7 +42,7 @@
 
     <!-- Title -->
     
-    <title>vim基本操作 - Yucapri</title>
+    <title>Nginx部署静态页出现中文乱码 - Yucapri</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -146,13 +146,13 @@
 
     <div class="post-header">
         <h1 class="title">
-            <a href="/2016/01/21/技术/技术_vim基本操作/">
-                vim基本操作
+            <a href="/2018/06/13/技术/技术_Nginx部署静态页出现中文乱码/">
+                Nginx部署静态页出现中文乱码
             </a>
         </h1>
         <div class="post-info">
             
-                <span class="date">2016-01-21</span>
+                <span class="date">2018-06-13</span>
             
             
             
@@ -169,7 +169,8 @@
         
 
         <!-- Post Content -->
-        <h1 id="vim基本操作"><a href="#vim基本操作" class="headerlink" title="vim基本操作"></a>vim基本操作</h1><h3 id="用户名-目录-用户名-vim-文件名"><a href="#用户名-目录-用户名-vim-文件名" class="headerlink" title="用户名:目录 用户名$ vim 文件名"></a>用户名:目录 用户名$ vim 文件名</h3><h3 id="命令模式-esc"><a href="#命令模式-esc" class="headerlink" title="命令模式 esc"></a>命令模式 esc</h3><h3 id="输入模式-i"><a href="#输入模式-i" class="headerlink" title="输入模式 i"></a>输入模式 i</h3><h3 id="底行模式-："><a href="#底行模式-：" class="headerlink" title="底行模式 ："></a>底行模式 ：</h3><h3 id="＃yy-gt-复制＃行"><a href="#＃yy-gt-复制＃行" class="headerlink" title="＃yy -&gt;复制＃行"></a>＃yy -&gt;复制＃行</h3><h3 id="＃dd-gt-删除＃行"><a href="#＃dd-gt-删除＃行" class="headerlink" title="＃dd -&gt; 删除＃行"></a>＃dd -&gt; 删除＃行</h3><h3 id="p-gt-粘贴"><a href="#p-gt-粘贴" class="headerlink" title="p -&gt; 粘贴"></a>p -&gt; 粘贴</h3><h3 id="gt-行首"><a href="#gt-行首" class="headerlink" title="$ -&gt; 行首"></a>$ -&gt; 行首</h3><h3 id="0-gt-行尾"><a href="#0-gt-行尾" class="headerlink" title="0 -&gt; 行尾"></a>0 -&gt; 行尾</h3>
+        <h1 id="Nginx部署静态页出现中文乱码"><a href="#Nginx部署静态页出现中文乱码" class="headerlink" title="Nginx部署静态页出现中文乱码"></a>Nginx部署静态页出现中文乱码</h1><h3 id="在nginx服务器用vim编了个测试HTML网页。。。。浏览器访问乱码，编辑了下nginx的配置文件nginx-conf添加了一行charset-utf-8"><a href="#在nginx服务器用vim编了个测试HTML网页。。。。浏览器访问乱码，编辑了下nginx的配置文件nginx-conf添加了一行charset-utf-8" class="headerlink" title="在nginx服务器用vim编了个测试HTML网页。。。。浏览器访问乱码，编辑了下nginx的配置文件nginx.conf添加了一行charset utf-8;"></a>在nginx服务器用vim编了个测试HTML网页。。。。浏览器访问乱码，编辑了下nginx的配置文件nginx.conf添加了一行charset utf-8;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line">    sendfile        on;</span><br><span class="line">    keepalive_timeout  65;</span><br><span class="line">    charset utf-8;    #对所有主机生效或者添加在service模块只对单个主机生效比如下面#内容</span><br><span class="line">    server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        server_name  ***.***.***;</span><br><span class="line">        #charset utf-8;   #&quot;没错就是这里&quot;</span><br><span class="line">        location / &#123;</span><br><span class="line">            root   html/www;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line">        error_page   500 502 503 504  /50x.html;</span><br><span class="line">        location = /50x.html &#123;</span><br><span class="line">            root   html;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="重启nginx服务"><a href="#重启nginx服务" class="headerlink" title="!!!!!!重启nginx服务"></a>!!!!!!重启nginx服务</h3><h3 id="F5刷新了下-。。。。。成功！"><a href="#F5刷新了下-。。。。。成功！" class="headerlink" title="F5刷新了下 。。。。。成功！"></a>F5刷新了下 。。。。。成功！</h3>
     </div>
 
     
@@ -177,7 +178,7 @@
     
         <div class="post-tags">
             <i class="fa fa-tags" aria-hidden="true"></i>
-            <a href="/tags/vim/">#vim</a>
+            <a href="/tags/Nginx/">#Nginx</a>
         </div>
     
 
@@ -202,7 +203,7 @@
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
                 <h2>About</h2>
                 <p>
-                    Powered  By <a href="https://hexo.io/"> Hexo</a> &nbsp; & &nbsp; <a href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">JonaThan Klughertz - Alpha-dust</a> <br /> Hosted by <a href="https://pages.coding.me/">Coding Pages</a>
+                    Powered  By <a href="https://hexo.io/"> Hexo</a> &nbsp; & &nbsp; <a href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">JonaThan Klughertz - Alpha-dust</a> <br /> Hosted by <a href="https://pages.github.com/">Github Pages</a>
                 </p>
             </div>
             
@@ -211,15 +212,15 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2018/06/13/技术/技术_Nginx部署静态页出现中文乱码/">Nginx部署静态页出现中文乱码</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2018/06/10/Linux/Linux_防火墙Firewalld/">防火墙Firewalld</a>
             </li>
             
             <li>
                 <a class="footer-post" href="/2018/06/07/技术/技术_Jenkins FAQ/">Jenkins FAQ</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/10/04/iOS/iOS_面试题总结/">面试题总结</a>
             </li>
             
             <li>
@@ -249,7 +250,7 @@
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/Linux/">Linux</a>
+            <a class="footer-post" href="/categories/技术/">技术</a>
         </li>
         
     </ul>

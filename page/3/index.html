@@ -147,6 +147,39 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2016/08/16/React-Native/React Native_React Nativeの坑/">
+                React Nativeの坑
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2016-08-16</span>
+            
+            
+            
+                <span class="category">
+                    <a href="/categories/React-Native/">React Native</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="React-Nativeの坑"><a href="#React-Nativeの坑" class="headerlink" title="React Nativeの坑"></a>React Nativeの坑</h1><h3 id="不会报错的RN与React配比"><a href="#不会报错的RN与React配比" class="headerlink" title="不会报错的RN与React配比"></a>不会报错的RN与React配比</h3><h3 id="For-RN-0-30-and-0-31-npm-install-react-15-2-1"><a href="#For-RN-0-30-and-0-31-npm-install-react-15-2-1" class="headerlink" title="For RN 0.30 and 0.31: npm install react@15.2.1"></a>For RN <code>0.30 and 0.31</code>: <code>npm install react@15.2.1</code></h3><h3 id="For-RN-0-32-npm-install-react-15-3-0"><a href="#For-RN-0-32-npm-install-react-15-3-0" class="headerlink" title="For RN 0.32: npm install react@15.3.0"></a>For RN <code>0.32</code>: <code>npm install react@15.3.0</code></h3><h3 id="RN-gt-View支持的属性"><a href="#RN-gt-View支持的属性" class="headerlink" title="RN-&gt;View支持的属性"></a>RN-&gt;View支持的属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">width</span><br><span class="line">height</span><br><span class="line">top</span><br><span class="line">left</span><br><span class="line">right</span><br><span class="line">bottom</span><br><span class="line">minWidth</span><br><span class="line">maxWidth</span><br><span class="line">minHeight</span><br><span class="line">maxHeight</span><br><span class="line">margin</span><br><span class="line">marginVertical</span><br><span class="line">marginHorizontal</span><br><span class="line">marginTop</span><br><span class="line">marginBottom</span><br><span class="line">marginLeft</span><br><span class="line">marginRight</span><br><span class="line">padding</span><br><span class="line">paddingVertical</span><br><span class="line">paddingHorizontal</span><br><span class="line">paddingTop</span><br><span class="line">paddingBottom</span><br><span class="line">paddingLeft</span><br><span class="line">paddingRight</span><br><span class="line">borderWidth</span><br><span class="line">borderTopWidth</span><br><span class="line">borderRightWidth</span><br><span class="line">borderBottomWidth</span><br><span class="line">borderLeftWidth</span><br><span class="line">position</span><br><span class="line">flexDirection</span><br><span class="line">flexWrap</span><br><span class="line">justifyContent</span><br><span class="line">alignItems</span><br><span class="line">alignSelf</span><br><span class="line">flex</span><br><span class="line">zIndex</span><br><span class="line">shadowColor</span><br><span class="line">shadowOffset</span><br><span class="line">shadowOpacity</span><br><span class="line">shadowRadius</span><br><span class="line">transform</span><br><span class="line">transformMatrix</span><br><span class="line">decomposedMatrix</span><br><span class="line">scaleX</span><br><span class="line">scaleY</span><br><span class="line">rotation</span><br><span class="line">translateX</span><br><span class="line">translateY</span><br><span class="line">backfaceVisibility</span><br><span class="line">backgroundColor</span><br><span class="line">borderColor</span><br><span class="line">borderTopColor</span><br><span class="line">borderRightColor</span><br><span class="line">borderBottomColor</span><br><span class="line">borderLeftColor</span><br><span class="line">borderRadius</span><br><span class="line">borderTopLeftRadius</span><br><span class="line">borderTopRightRadius</span><br><span class="line">borderBottomLeftRadius</span><br><span class="line">borderBottomRightRadius</span><br><span class="line">borderStyle</span><br><span class="line">opacity</span><br><span class="line">overflow</span><br><span class="line">elevation</span><br></pre></td></tr></table></figure>
+<h3 id="RN-gt-Text支持的属性"><a href="#RN-gt-Text支持的属性" class="headerlink" title="RN-&gt;Text支持的属性"></a>RN-&gt;Text支持的属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">color</span><br><span class="line">fontFamily</span><br><span class="line">fontSize</span><br><span class="line">fontStyle</span><br><span class="line">fontWeight</span><br><span class="line">textShadowOffset</span><br><span class="line">textShadowRadius</span><br><span class="line">textShadowColor</span><br><span class="line">letterSpacing</span><br><span class="line">lineHeight</span><br><span class="line">textAlign</span><br><span class="line">textAlignVertical</span><br><span class="line">textDecorationLine</span><br><span class="line">textDecorationStyle</span><br><span class="line">textDecorationColor</span><br><span class="line">writingDirection</span><br></pre></td></tr></table></figure>
+<h3 id="RN-gt-TextInput"><a href="#RN-gt-TextInput" class="headerlink" title="RN-&gt;TextInput"></a>RN-&gt;TextInput</h3><h3 id="给text-input设置一个ref-然后调用blur-即可使其失去焦点"><a href="#给text-input设置一个ref-然后调用blur-即可使其失去焦点" class="headerlink" title="给text input设置一个ref,然后调用blur()即可使其失去焦点"></a>给text input设置一个<code>ref</code>,然后调用<code>blur()</code>即可使其失去焦点</h3><h3 id="RN-gt-jsbundle打包"><a href="#RN-gt-jsbundle打包" class="headerlink" title="RN-&gt;jsbundle打包"></a>RN-&gt;jsbundle打包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">react-native bundle --entry-file ./index.ios.js --bundle-output ./ios/main.jsbundle --platform ios --dev false --assets-dest ./ios/</span><br></pre></td></tr></table></figure>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2016/08/11/Mac/Mac_特殊字符/">
                 特殊字符
             </a>
@@ -437,38 +470,6 @@
 
 </div>
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/05/22/技术/技术_班瓦工/">
-                班瓦工
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2016-05-22</span>
-            
-            
-            
-                <span class="category">
-                    <a href="/categories/技术/">技术</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <h1 id="班瓦工"><a href="#班瓦工" class="headerlink" title="班瓦工"></a>班瓦工</h1><h3 id="介绍一个scp吧"><a href="#介绍一个scp吧" class="headerlink" title="介绍一个scp吧"></a>介绍一个scp吧</h3><h3 id="首先在你的服务器新建目录／root-ssh"><a href="#首先在你的服务器新建目录／root-ssh" class="headerlink" title="首先在你的服务器新建目录／root/.ssh"></a>首先在你的服务器新建目录<code>／root/.ssh</code></h3><h3 id="然后执行"><a href="#然后执行" class="headerlink" title="然后执行"></a>然后执行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -P ssh端口号 .ssh/id_rsa.pub 用户@IP地址:/root/.ssh/authorized_keys</span><br></pre></td></tr></table></figure>
-<h3 id="然后就可以不用密码远程连接啦"><a href="#然后就可以不用密码远程连接啦" class="headerlink" title="然后就可以不用密码远程连接啦"></a>然后就可以不用密码远程连接啦</h3><h3 id="获取pip安装包"><a href="#获取pip安装包" class="headerlink" title="获取pip安装包"></a>获取pip安装包</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://bootstrap.pypa.io/get-pip.py --no-check-certificate</span><br></pre></td></tr></table></figure>
-<h3 id="然后执行python-get-pip-py-pip-install-shadowsocks"><a href="#然后执行python-get-pip-py-pip-install-shadowsocks" class="headerlink" title="然后执行python get-pip.py ,pip install shadowsocks"></a>然后执行<code>python get-pip.py</code> ,<code>pip install shadowsocks</code></h3>
-        </div>
-    
-
-</div>
-            
         </section>
     </div>
 </div>
@@ -502,7 +503,7 @@
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
                 <h2>About</h2>
                 <p>
-                    Powered  By <a href="https://hexo.io/"> Hexo</a> &nbsp; & &nbsp; <a href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">JonaThan Klughertz - Alpha-dust</a> <br /> Hosted by <a href="https://pages.coding.me/">Coding Pages</a>
+                    Powered  By <a href="https://hexo.io/"> Hexo</a> &nbsp; & &nbsp; <a href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">JonaThan Klughertz - Alpha-dust</a> <br /> Hosted by <a href="https://pages.github.com/">Github Pages</a>
                 </p>
             </div>
             
@@ -511,15 +512,15 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2018/06/13/技术/技术_Nginx部署静态页出现中文乱码/">Nginx部署静态页出现中文乱码</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2018/06/10/Linux/Linux_防火墙Firewalld/">防火墙Firewalld</a>
             </li>
             
             <li>
                 <a class="footer-post" href="/2018/06/07/技术/技术_Jenkins FAQ/">Jenkins FAQ</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/10/04/iOS/iOS_面试题总结/">面试题总结</a>
             </li>
             
             <li>
@@ -549,7 +550,7 @@
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/Linux/">Linux</a>
+            <a class="footer-post" href="/categories/技术/">技术</a>
         </li>
         
     </ul>

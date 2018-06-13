@@ -10,7 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="终端彩色显示修改.bash_profile文件1234567891011#enables colorin the terminal bash shell export#sets up thecolor scheme for list export#sets up theprompt color (c">
+        <meta name="description" content="小脚本解决大问题就在写上一篇博客的时候，由于我的这个模版不是很完善，所以上传到服务器之后还需要自己处理一些事，最近心情不好，一下子就犯懒了，突然想到了脚本这个东西，我一下精神起来，捅咕了一会总算是好用了，上传到服务器，运行一个脚本，就全都搞定了。后来更懒了，直接把本地博客生成也写成了脚本，灰常棒…下">
     
 
     <!--Author-->
@@ -20,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="终端彩色显示"/>
+        <meta property="og:title" content="小脚本解决大问题"/>
     
 
     <!--Open Graph Description-->
@@ -42,7 +42,7 @@
 
     <!-- Title -->
     
-    <title>终端彩色显示 - Yucapri</title>
+    <title>小脚本解决大问题 - Yucapri</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -146,18 +146,18 @@
 
     <div class="post-header">
         <h1 class="title">
-            <a href="/2016/02/08/技术/技术_终端彩色显示/">
-                终端彩色显示
+            <a href="/2016/02/18/Linux/Linux_小脚本解决大问题/">
+                小脚本解决大问题
             </a>
         </h1>
         <div class="post-info">
             
-                <span class="date">2016-02-08</span>
+                <span class="date">2016-02-18</span>
             
             
             
                 <span class="category">
-                    <a href="/categories/技术/">技术</a>
+                    <a href="/categories/Linux/">Linux</a>
                 </span>
             
         </div>
@@ -169,8 +169,9 @@
         
 
         <!-- Post Content -->
-        <h1 id="终端彩色显示"><a href="#终端彩色显示" class="headerlink" title="终端彩色显示"></a>终端彩色显示</h1><h3 id="修改-bash-profile文件"><a href="#修改-bash-profile文件" class="headerlink" title="修改.bash_profile文件"></a>修改.bash_profile文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#enables colorin the terminal bash shell export</span><br><span class="line">#sets up thecolor scheme for list export</span><br><span class="line">#sets up theprompt color (currently a green similar to linux terminal)</span><br><span class="line">#enables colorfor iTerm</span><br><span class="line"></span><br><span class="line">export CLICOLOR=1</span><br><span class="line">export LSCOLORS=gxfxcxdxbxegedabagacad</span><br><span class="line">export PS1=&apos;\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$ &apos;</span><br><span class="line">export TERM=xterm-color</span><br><span class="line">alias 自定义命令 = 原命令</span><br><span class="line">unalias 自定义命令</span><br></pre></td></tr></table></figure>
-<h3 id="source-xxx和-xxx是在当前shell环境中执行xxx文件中的内容，而sh-xxx或-xxx则开启子进程（子shell）执行，故要使-bash-profile中的修改立即生效，只能使用source-bash-profile-和-bash-profile。"><a href="#source-xxx和-xxx是在当前shell环境中执行xxx文件中的内容，而sh-xxx或-xxx则开启子进程（子shell）执行，故要使-bash-profile中的修改立即生效，只能使用source-bash-profile-和-bash-profile。" class="headerlink" title="source xxx和. xxx是在当前shell环境中执行xxx文件中的内容，而sh xxx或./xxx则开启子进程（子shell）执行，故要使.bash_profile中的修改立即生效，只能使用source .bash_profile 和. .bash_profile。"></a><code>source xxx</code>和<code>. xxx</code>是在当前shell环境中执行<code>xxx</code>文件中的内容，而<code>sh xxx</code>或<code>./xxx</code>则开启子进程（子shell）执行，故要使<code>.bash_profile</code>中的修改立即生效，只能使用<code>source .bash_profile</code> 和<code>. .bash_profile</code>。</h3>
+        <h1 id="小脚本解决大问题"><a href="#小脚本解决大问题" class="headerlink" title="小脚本解决大问题"></a>小脚本解决大问题</h1><h4 id="就在写上一篇博客的时候，由于我的这个模版不是很完善，所以上传到服务器之后还需要自己处理一些事，最近心情不好，一下子就犯懒了，突然想到了脚本这个东西，我一下精神起来，捅咕了一会总算是好用了，上传到服务器，运行一个脚本，就全都搞定了。后来更懒了，直接把本地博客生成也写成了脚本，灰常棒…"><a href="#就在写上一篇博客的时候，由于我的这个模版不是很完善，所以上传到服务器之后还需要自己处理一些事，最近心情不好，一下子就犯懒了，突然想到了脚本这个东西，我一下精神起来，捅咕了一会总算是好用了，上传到服务器，运行一个脚本，就全都搞定了。后来更懒了，直接把本地博客生成也写成了脚本，灰常棒…" class="headerlink" title="就在写上一篇博客的时候，由于我的这个模版不是很完善，所以上传到服务器之后还需要自己处理一些事，最近心情不好，一下子就犯懒了，突然想到了脚本这个东西，我一下精神起来，捅咕了一会总算是好用了，上传到服务器，运行一个脚本，就全都搞定了。后来更懒了，直接把本地博客生成也写成了脚本，灰常棒…"></a>就在写上一篇博客的时候，由于我的这个模版不是很完善，所以上传到服务器之后还需要自己处理一些事，最近心情不好，一下子就犯懒了，突然想到了脚本这个东西，我一下精神起来，捅咕了一会总算是好用了，上传到服务器，运行一个脚本，就全都搞定了。后来更懒了，直接把本地博客生成也写成了脚本，灰常棒…</h4><h4 id="下面说一下这玩意咋写。"><a href="#下面说一下这玩意咋写。" class="headerlink" title="下面说一下这玩意咋写。"></a>下面说一下这玩意咋写。</h4><h4 id="1-打开终端-并使用vim新建文件todo-sh"><a href="#1-打开终端-并使用vim新建文件todo-sh" class="headerlink" title="1.打开终端,并使用vim新建文件todo.sh"></a>1.打开终端,并使用vim新建文件todo.sh</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim todo.sh (i)</span><br></pre></td></tr></table></figure>
+<h4 id="2-输入以下代码"><a href="#2-输入以下代码" class="headerlink" title="2.输入以下代码"></a>2.输入以下代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#! /bin/bash</span><br><span class="line">mkdir newFolder</span><br></pre></td></tr></table></figure>
+<h4 id="3-chmod-777-todo-sh"><a href="#3-chmod-777-todo-sh" class="headerlink" title="3.chmod 777 todo.sh"></a>3.<code>chmod 777 todo.sh</code></h4><h4 id="4-todo-sh"><a href="#4-todo-sh" class="headerlink" title="4../todo.sh"></a>4.<code>./todo.sh</code></h4><h4 id="5-ok"><a href="#5-ok" class="headerlink" title="5.ok"></a>5.ok</h4>
     </div>
 
     
@@ -178,7 +179,7 @@
     
         <div class="post-tags">
             <i class="fa fa-tags" aria-hidden="true"></i>
-            <a href="/tags/终端/">#终端</a>
+            <a href="/tags/脚本/">#脚本</a>
         </div>
     
 
@@ -203,7 +204,7 @@
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
                 <h2>About</h2>
                 <p>
-                    Powered  By <a href="https://hexo.io/"> Hexo</a> &nbsp; & &nbsp; <a href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">JonaThan Klughertz - Alpha-dust</a> <br /> Hosted by <a href="https://pages.coding.me/">Coding Pages</a>
+                    Powered  By <a href="https://hexo.io/"> Hexo</a> &nbsp; & &nbsp; <a href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">JonaThan Klughertz - Alpha-dust</a> <br /> Hosted by <a href="https://pages.github.com/">Github Pages</a>
                 </p>
             </div>
             
@@ -212,15 +213,15 @@
         <ul>
             
             <li>
+                <a class="footer-post" href="/2018/06/13/技术/技术_Nginx部署静态页出现中文乱码/">Nginx部署静态页出现中文乱码</a>
+            </li>
+            
+            <li>
                 <a class="footer-post" href="/2018/06/10/Linux/Linux_防火墙Firewalld/">防火墙Firewalld</a>
             </li>
             
             <li>
                 <a class="footer-post" href="/2018/06/07/技术/技术_Jenkins FAQ/">Jenkins FAQ</a>
-            </li>
-            
-            <li>
-                <a class="footer-post" href="/2017/10/04/iOS/iOS_面试题总结/">面试题总结</a>
             </li>
             
             <li>
@@ -250,7 +251,7 @@
         </li>
         
         <li>
-            <a class="footer-post" href="/categories/Linux/">Linux</a>
+            <a class="footer-post" href="/categories/技术/">技术</a>
         </li>
         
     </ul>
