@@ -150,6 +150,85 @@
 
     <div class="post-header index">
         <h1 class="title">
+            <a href="/2016/01/27/iOS/iOS_AFNetworking 3.0/">
+                AFNetworking 3.0
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2016-01-27</span>
+            
+            
+            
+                <span class="category">
+                    <a href="/categories/iOS/">iOS</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="AFNetworking-3-0"><a href="#AFNetworking-3-0" class="headerlink" title="AFNetworking 3.0"></a>AFNetworking 3.0</h1><h3 id="AFNetworking是一款在OS-X和iOS下都令人喜爱的网络库。为了迎合iOS新版本的升级-AFNetworking在3-0版本中删除了基于-NSURLConnection-API的所有支持。如果你的项目以前使用过这些API，建议您立即升级到基于-NSURLSession-的API的AFNetworking的版本。本指南将引导您完成这个过程。本指南是为了引导使用AFNetworking-2-x升级到最新的版本API，以达到过渡的目的，并且解释了新增和更改的设计结构。"><a href="#AFNetworking是一款在OS-X和iOS下都令人喜爱的网络库。为了迎合iOS新版本的升级-AFNetworking在3-0版本中删除了基于-NSURLConnection-API的所有支持。如果你的项目以前使用过这些API，建议您立即升级到基于-NSURLSession-的API的AFNetworking的版本。本指南将引导您完成这个过程。本指南是为了引导使用AFNetworking-2-x升级到最新的版本API，以达到过渡的目的，并且解释了新增和更改的设计结构。" class="headerlink" title="AFNetworking是一款在OS X和iOS下都令人喜爱的网络库。为了迎合iOS新版本的升级, AFNetworking在3.0版本中删除了基于 NSURLConnection API的所有支持。如果你的项目以前使用过这些API，建议您立即升级到基于 NSURLSession 的API的AFNetworking的版本。本指南将引导您完成这个过程。本指南是为了引导使用AFNetworking 2.x升级到最新的版本API，以达到过渡的目的，并且解释了新增和更改的设计结构。"></a>AFNetworking是一款在OS X和iOS下都令人喜爱的网络库。为了迎合iOS新版本的升级, AFNetworking在3.0版本中删除了基于 NSURLConnection API的所有支持。如果你的项目以前使用过这些API，建议您立即升级到基于 NSURLSession 的API的AFNetworking的版本。本指南将引导您完成这个过程。本指南是为了引导使用AFNetworking 2.x升级到最新的版本API，以达到过渡的目的，并且解释了新增和更改的设计结构。</h3><h3 id="新设备要求-iOS-7-Mac-OS-X-10-9-watchOS-2-tvOS-9-amp-Xcode-7"><a href="#新设备要求-iOS-7-Mac-OS-X-10-9-watchOS-2-tvOS-9-amp-Xcode-7" class="headerlink" title="新设备要求: iOS 7, Mac OS X 10.9, watchOS 2, tvOS 9, &amp; Xcode 7"></a>新设备要求: iOS 7, Mac OS X 10.9, watchOS 2, tvOS 9, &amp; Xcode 7</h3><h3 id="AFNetworking-3-0正式支持的iOS-7，-Mac-OS-X的10-9，-watchOS-2-，-tvOS-9-和Xcode-7。如果你想使用AFNetworking在针对较旧版本的SDK项目，请检查README的兼容性信息。"><a href="#AFNetworking-3-0正式支持的iOS-7，-Mac-OS-X的10-9，-watchOS-2-，-tvOS-9-和Xcode-7。如果你想使用AFNetworking在针对较旧版本的SDK项目，请检查README的兼容性信息。" class="headerlink" title="AFNetworking 3.0正式支持的iOS 7， Mac OS X的10.9， watchOS 2 ， tvOS 9 和Xcode 7。如果你想使用AFNetworking在针对较旧版本的SDK项目，请检查README的兼容性信息。"></a>AFNetworking 3.0正式支持的iOS 7， Mac OS X的10.9， watchOS 2 ， tvOS 9 和Xcode 7。如果你想使用AFNetworking在针对较旧版本的SDK项目，请检查README的兼容性信息。</h3><h3 id="NSURLConnection的API已废弃"><a href="#NSURLConnection的API已废弃" class="headerlink" title="NSURLConnection的API已废弃"></a>NSURLConnection的API已废弃</h3><h3 id="AFNetworking-1-0建立在NSURLConnection的基础API之上-，AFNetworking-2-0开始使用NSURLConnection的基础API-，以及较新基于NSURLSession的API的选项。-AFNetworking-3-0现已完全基于NSURLSession的API，这降低了维护的负担，同时支持苹果增强关于NSURLSession提供的任何额外功能。由于Xcode-7中，NSURLConnection的API已经正式被苹果弃用。虽然该API将继续运行，但将没有新功能将被添加，并且苹果已经通知所有基于网络的功能，以充分使NSURLSession向前发展。"><a href="#AFNetworking-1-0建立在NSURLConnection的基础API之上-，AFNetworking-2-0开始使用NSURLConnection的基础API-，以及较新基于NSURLSession的API的选项。-AFNetworking-3-0现已完全基于NSURLSession的API，这降低了维护的负担，同时支持苹果增强关于NSURLSession提供的任何额外功能。由于Xcode-7中，NSURLConnection的API已经正式被苹果弃用。虽然该API将继续运行，但将没有新功能将被添加，并且苹果已经通知所有基于网络的功能，以充分使NSURLSession向前发展。" class="headerlink" title="AFNetworking 1.0建立在NSURLConnection的基础API之上 ，AFNetworking 2.0开始使用NSURLConnection的基础API ，以及较新基于NSURLSession的API的选项。 AFNetworking 3.0现已完全基于NSURLSession的API，这降低了维护的负担，同时支持苹果增强关于NSURLSession提供的任何额外功能。由于Xcode 7中，NSURLConnection的API已经正式被苹果弃用。虽然该API将继续运行，但将没有新功能将被添加，并且苹果已经通知所有基于网络的功能，以充分使NSURLSession向前发展。"></a>AFNetworking 1.0建立在NSURLConnection的基础API之上 ，AFNetworking 2.0开始使用<code>NSURLConnection</code>的基础API ，以及较新基于<code>NSURLSession</code>的API的选项。 AFNetworking 3.0现已完全基于<code>NSURLSession</code>的API，这降低了维护的负担，同时支持苹果增强关于<code>NSURLSession</code>提供的任何额外功能。由于Xcode 7中，<code>NSURLConnection</code>的API已经正式被苹果弃用。虽然该API将继续运行，但将没有新功能将被添加，并且苹果已经通知所有基于网络的功能，以充分使<code>NSURLSession</code>向前发展。</h3><h3 id="AFNetworking-2-X将继续获得关键的隐患和安全补丁，但没有新的功能将被添加。Alamofire-Swift下的网络请求-软件基金会建议，所有的项目迁移到基于NSURLSession的API。"><a href="#AFNetworking-2-X将继续获得关键的隐患和安全补丁，但没有新的功能将被添加。Alamofire-Swift下的网络请求-软件基金会建议，所有的项目迁移到基于NSURLSession的API。" class="headerlink" title="AFNetworking 2.X将继续获得关键的隐患和安全补丁，但没有新的功能将被添加。Alamofire(Swift下的网络请求)软件基金会建议，所有的项目迁移到基于NSURLSession的API。"></a>AFNetworking 2.X将继续获得关键的隐患和安全补丁，但没有新的功能将被添加。Alamofire(Swift下的网络请求)软件基金会建议，所有的项目迁移到基于<code>NSURLSession</code>的API。</h3><h3 id="弃用的类"><a href="#弃用的类" class="headerlink" title="弃用的类"></a>弃用的类</h3><h4 id="下面的类已从AFNetworking-3-0中废弃："><a href="#下面的类已从AFNetworking-3-0中废弃：" class="headerlink" title="下面的类已从AFNetworking 3.0中废弃："></a>下面的类已从AFNetworking 3.0中废弃：</h4><ul>
+<li>AFURLConnectionOperation</li>
+<li>AFHTTPRequestOperation</li>
+<li>AFHTTPRequestOperationManager</li>
+</ul>
+<h3 id="修改的类"><a href="#修改的类" class="headerlink" title="修改的类"></a>修改的类</h3><h4 id="下面的类包含基于NSURLConnection的API的内部实现。他们已经被使用NSURLSession重构"><a href="#下面的类包含基于NSURLConnection的API的内部实现。他们已经被使用NSURLSession重构" class="headerlink" title="下面的类包含基于NSURLConnection的API的内部实现。他们已经被使用NSURLSession重构:"></a>下面的类包含基于<code>NSURLConnection</code>的API的内部实现。他们已经被使用<code>NSURLSession</code>重构:</h4><ul>
+<li>UIImageView+AFNetworking</li>
+<li>UIWebView+AFNetworking</li>
+<li>UIButton+AFNetworking</li>
+</ul>
+<h3 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h3><h4 id="AFHTTPRequestOperationManager-核心代码"><a href="#AFHTTPRequestOperationManager-核心代码" class="headerlink" title="AFHTTPRequestOperationManager 核心代码"></a>AFHTTPRequestOperationManager 核心代码</h4><h4 id="如果你以前使用AFHTTPRequestOperationManager，-你将需要迁移去使用AFHTTPSessionManager。-以下的类在两者过渡间并没有变化："><a href="#如果你以前使用AFHTTPRequestOperationManager，-你将需要迁移去使用AFHTTPSessionManager。-以下的类在两者过渡间并没有变化：" class="headerlink" title="如果你以前使用AFHTTPRequestOperationManager， 你将需要迁移去使用AFHTTPSessionManager。 以下的类在两者过渡间并没有变化："></a>如果你以前使用<code>AFHTTPRequestOperationManager</code>， 你将需要迁移去使用<code>AFHTTPSessionManager</code>。 以下的类在两者过渡间并没有变化：</h4><ul>
+<li>securityPolicy</li>
+<li>requestSerializer</li>
+<li>responseSerializer</li>
+</ul>
+<h3 id="接下来举一个关于AFHTTPSessionManager的简单例子。注意HTTP网络请求返回的不再是AFHTTPRequestOperation-修改成为了NSURLSessionTask，并且成功和失败的Block块中的参数也变更为了NSURLSessionTask，而不再是AFHTTPRequestOperation。"><a href="#接下来举一个关于AFHTTPSessionManager的简单例子。注意HTTP网络请求返回的不再是AFHTTPRequestOperation-修改成为了NSURLSessionTask，并且成功和失败的Block块中的参数也变更为了NSURLSessionTask，而不再是AFHTTPRequestOperation。" class="headerlink" title="接下来举一个关于AFHTTPSessionManager的简单例子。注意HTTP网络请求返回的不再是AFHTTPRequestOperation, 修改成为了NSURLSessionTask，并且成功和失败的Block块中的参数也变更为了NSURLSessionTask，而不再是AFHTTPRequestOperation。"></a>接下来举一个关于<code>AFHTTPSessionManager</code>的简单例子。注意HTTP网络请求返回的不再是<code>AFHTTPRequestOperation</code>, 修改成为了<code>NSURLSessionTask</code>，并且成功和失败的Block块中的参数也变更为了<code>NSURLSessionTask</code>，而不再是<code>AFHTTPRequestOperation</code>。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//AFNetworking 2.x</span><br><span class="line"></span><br><span class="line">AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];</span><br><span class="line">[manager GET:@&quot;请求的url&quot; parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) &#123;</span><br><span class="line">        NSLog(@&quot;成功&quot;);</span><br><span class="line">&#125; failure:^(AFHTTPRequestOperation *operation, NSError*error) &#123;</span><br><span class="line">        NSLog(@&quot;失败&quot;);</span><br><span class="line">&#125;];</span><br><span class="line"></span><br><span class="line">//AFNetworking 3.0</span><br><span class="line"></span><br><span class="line">AFHTTPSessionManager *session = [AFHTTPSessionManager manager];</span><br><span class="line">[session GET:@&quot;请求的url&quot; parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) &#123;</span><br><span class="line">        NSLog(@&quot;成功&quot;);</span><br><span class="line">&#125; failure:^(NSURLSessionDataTask *task, NSError *error) &#123;</span><br><span class="line">        NSLog(@&quot;失败&quot;);        </span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
+<h3 id="AFHTTPRequestOperation-核心代码"><a href="#AFHTTPRequestOperation-核心代码" class="headerlink" title="AFHTTPRequestOperation 核心代码"></a>AFHTTPRequestOperation 核心代码</h3><h4 id="与NSURLConnection对象不同，每个共享应用范围的设置如会话管理、缓存策略、Cookie存储以及URL协议等，这些NSURLSession对象都可以单独进行配置。使用特定的配置来初始化会话，它可以发送任务来获取数据，并上传或下载文件。"><a href="#与NSURLConnection对象不同，每个共享应用范围的设置如会话管理、缓存策略、Cookie存储以及URL协议等，这些NSURLSession对象都可以单独进行配置。使用特定的配置来初始化会话，它可以发送任务来获取数据，并上传或下载文件。" class="headerlink" title="与NSURLConnection对象不同，每个共享应用范围的设置如会话管理、缓存策略、Cookie存储以及URL协议等，这些NSURLSession对象都可以单独进行配置。使用特定的配置来初始化会话，它可以发送任务来获取数据，并上传或下载文件。"></a>与<code>NSURLConnection</code>对象不同，每个共享应用范围的设置如会话管理、缓存策略、Cookie存储以及URL协议等，这些<code>NSURLSession</code>对象都可以单独进行配置。使用特定的配置来初始化会话，它可以发送任务来获取数据，并上传或下载文件。</h4><h4 id="在AFNetworking-2-0中，使用AFHTTPRequestOperation，有可能创建一个没有额外开销的独立的网络请求来获取数据。NSURLSession则需要更多的开销，为了获得所要请求的数据。"><a href="#在AFNetworking-2-0中，使用AFHTTPRequestOperation，有可能创建一个没有额外开销的独立的网络请求来获取数据。NSURLSession则需要更多的开销，为了获得所要请求的数据。" class="headerlink" title="在AFNetworking 2.0中，使用AFHTTPRequestOperation，有可能创建一个没有额外开销的独立的网络请求来获取数据。NSURLSession则需要更多的开销，为了获得所要请求的数据。"></a>在AFNetworking 2.0中，使用<code>AFHTTPRequestOperation</code>，有可能创建一个没有额外开销的独立的网络请求来获取数据。<code>NSURLSession</code>则需要更多的开销，为了获得所要请求的数据。</h4><h4 id="接下来，将要通过AFHTTPSessionManager创建一个对象，并创建一个任务和启动它。"><a href="#接下来，将要通过AFHTTPSessionManager创建一个对象，并创建一个任务和启动它。" class="headerlink" title="接下来，将要通过AFHTTPSessionManager创建一个对象，并创建一个任务和启动它。"></a>接下来，将要通过<code>AFHTTPSessionManager</code>创建一个对象，并创建一个任务和启动它。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">//AFNetworking 2.x</span><br><span class="line"></span><br><span class="line">NSURL *URL = [NSURL URLWithString:@&quot;&quot;];</span><br><span class="line">NSURLRequest *request = [NSURLRequest requestWithURL:URL];</span><br><span class="line">AFHTTPRequestOperation *op = [[AFHTTPRequestOperation alloc] initWithRequest:request];</span><br><span class="line">op.responseSerializer = [AFJSONResponseSerializer serializer];</span><br><span class="line">[op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) &#123;</span><br><span class="line">        NSLog(@&quot;JSON: %@&quot;, responseObject);</span><br><span class="line">&#125; failure:^(AFHTTPRequestOperation *operation, NSError *error) &#123;</span><br><span class="line">        NSLog(@&quot;Error: %@&quot;, error);</span><br><span class="line">&#125;];</span><br><span class="line">[[NSOperationQueue mainQueue] addOperation:op];</span><br><span class="line"></span><br><span class="line">//AFNetworking 3.0</span><br><span class="line"></span><br><span class="line">NSURL *URL = [NSURL URLWithString:@&quot;&quot;];</span><br><span class="line">AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];</span><br><span class="line">[manager GET:URL.absoluteString parameters:nil success:^(NSURLSessionTask *task, id responseObject) &#123;</span><br><span class="line">        NSLog(@&quot;JSON: %@&quot;, responseObject);</span><br><span class="line">&#125; failure:^(NSURLSessionTask *operation, NSError *error) &#123;</span><br><span class="line">        NSLog(@&quot;Error: %@&quot;, error);</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
+<h3 id="UIKit的迁移"><a href="#UIKit的迁移" class="headerlink" title="UIKit的迁移"></a>UIKit的迁移</h3><h4 id="图片下载已经被重构，以遵循AlamofireImage架构与新的AFImageDownloader类。这个类的图片下载职责的代理人是UIButton与UIImageView的类目，并且提供了一些方法，在必要时可以自定义。类别中，下载远程图片的实际方法没有改变。"><a href="#图片下载已经被重构，以遵循AlamofireImage架构与新的AFImageDownloader类。这个类的图片下载职责的代理人是UIButton与UIImageView的类目，并且提供了一些方法，在必要时可以自定义。类别中，下载远程图片的实际方法没有改变。" class="headerlink" title="图片下载已经被重构，以遵循AlamofireImage架构与新的AFImageDownloader类。这个类的图片下载职责的代理人是UIButton与UIImageView的类目，并且提供了一些方法，在必要时可以自定义。类别中，下载远程图片的实际方法没有改变。"></a>图片下载已经被重构，以遵循AlamofireImage架构与新的<code>AFImageDownloader</code>类。这个类的图片下载职责的代理人是<code>UIButton</code>与<code>UIImageView</code>的类目，并且提供了一些方法，在必要时可以自定义。类别中，下载远程图片的实际方法没有改变。</h4><h4 id="UIWebView的类目被重构为使用AFHTTPSessionManager作为其网络请求。"><a href="#UIWebView的类目被重构为使用AFHTTPSessionManager作为其网络请求。" class="headerlink" title="UIWebView的类目被重构为使用AFHTTPSessionManager作为其网络请求。"></a>UIWebView的类目被重构为使用<code>AFHTTPSessionManager</code>作为其网络请求。</h4><h4 id="UIAlertView的类目被废弃"><a href="#UIAlertView的类目被废弃" class="headerlink" title="UIAlertView的类目被废弃"></a>UIAlertView的类目被废弃</h4><h4 id="从AFNetworking-3-0后UIAlertView的类目因过时而被废弃。并没有提供UIAlertController类目的计划，因为这是应用程序应处理的逻辑，而不是这个库。"><a href="#从AFNetworking-3-0后UIAlertView的类目因过时而被废弃。并没有提供UIAlertController类目的计划，因为这是应用程序应处理的逻辑，而不是这个库。" class="headerlink" title="从AFNetworking 3.0后UIAlertView的类目因过时而被废弃。并没有提供UIAlertController类目的计划，因为这是应用程序应处理的逻辑，而不是这个库。"></a>从AFNetworking 3.0后<code>UIAlertView</code>的类目因过时而被废弃。并没有提供<code>UIAlertController</code>类目的计划，因为这是应用程序应处理的逻辑，而不是这个库。</h4><p><a href="https://github.com/AFNetworking/AFNetworking/wiki/AFNetworking-3.0-Migration-Guide#new-requirements-ios-7-mac-os-x-109-watchos-2-tvos-9--xcode-7" target="_blank" rel="noopener">原文链接</a></p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2016/01/25/Mac/Mac_接入移动硬盘废纸篓会有删不掉的文件/">
+                接入移动硬盘废纸篓会有删不掉的文件
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2016-01-25</span>
+            
+            
+            
+                <span class="category">
+                    <a href="/categories/Mac/">Mac</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="接入移动硬盘废纸篓会有删不掉的文件"><a href="#接入移动硬盘废纸篓会有删不掉的文件" class="headerlink" title="接入移动硬盘废纸篓会有删不掉的文件"></a>接入移动硬盘废纸篓会有删不掉的文件</h1><h3 id="今天手贱网硬盘里干了个Xcode，结果传一半断了，然后就删不掉了，之前在同事的硬盘上出现过这个问题，今天摊到自己头上了，强迫症也犯了，同时也没有好办法解决就只好自己动手了"><a href="#今天手贱网硬盘里干了个Xcode，结果传一半断了，然后就删不掉了，之前在同事的硬盘上出现过这个问题，今天摊到自己头上了，强迫症也犯了，同时也没有好办法解决就只好自己动手了" class="headerlink" title="今天手贱网硬盘里干了个Xcode，结果传一半断了，然后就删不掉了，之前在同事的硬盘上出现过这个问题，今天摊到自己头上了，强迫症也犯了，同时也没有好办法解决就只好自己动手了"></a>今天手贱网硬盘里干了个Xcode，结果传一半断了，然后就删不掉了，之前在同事的硬盘上出现过这个问题，今天摊到自己头上了，强迫症也犯了，同时也没有好办法解决就只好自己动手了</h3><h3 id="首先命令行打开隐藏文件"><a href="#首先命令行打开隐藏文件" class="headerlink" title="首先命令行打开隐藏文件"></a>首先命令行打开隐藏文件</h3><h3 id="cd进入硬盘"><a href="#cd进入硬盘" class="headerlink" title="cd进入硬盘"></a>cd进入硬盘</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf .Trash/</span><br></pre></td></tr></table></figure>
+<h3 id="解决了～不过过程很慢，要耐心等待"><a href="#解决了～不过过程很慢，要耐心等待" class="headerlink" title="解决了～不过过程很慢，要耐心等待"></a>解决了～不过过程很慢，要耐心等待</h3>
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
             <a href="/2016/01/25/iOS/iOS_Cocoapods安装与使用/">
                 Cocoapods安装与使用
             </a>
@@ -194,37 +273,6 @@
 <h4 id="如果pod-setup太慢，可以直接"><a href="#如果pod-setup太慢，可以直接" class="headerlink" title="如果pod setup太慢，可以直接"></a>如果<code>pod setup</code>太慢，可以直接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/CocoaPods/Specs.git</span><br></pre></td></tr></table></figure>
 <h4 id="clone成功之后将文件夹外层改名为master，移动至～-cocoapods-repos"><a href="#clone成功之后将文件夹外层改名为master，移动至～-cocoapods-repos" class="headerlink" title="clone成功之后将文件夹外层改名为master，移动至～/.cocoapods/repos/"></a>clone成功之后将文件夹外层改名为master，移动至～/.cocoapods/repos/</h4><h4 id="如果pod-search失败，可执行"><a href="#如果pod-search失败，可执行" class="headerlink" title="如果pod search失败，可执行"></a>如果<code>pod search</code>失败，可执行</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm ~/Library/Caches/CocoaPods/search_index.json</span><br></pre></td></tr></table></figure>
 <h4 id="然后再尝试pod-search"><a href="#然后再尝试pod-search" class="headerlink" title="然后再尝试pod search"></a>然后再尝试<code>pod search</code></h4>
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/01/25/Mac/Mac_接入移动硬盘废纸篓会有删不掉的文件/">
-                接入移动硬盘废纸篓会有删不掉的文件
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2016-01-25</span>
-            
-            
-            
-                <span class="category">
-                    <a href="/categories/Mac/">Mac</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <h1 id="接入移动硬盘废纸篓会有删不掉的文件"><a href="#接入移动硬盘废纸篓会有删不掉的文件" class="headerlink" title="接入移动硬盘废纸篓会有删不掉的文件"></a>接入移动硬盘废纸篓会有删不掉的文件</h1><h3 id="今天手贱网硬盘里干了个Xcode，结果传一半断了，然后就删不掉了，之前在同事的硬盘上出现过这个问题，今天摊到自己头上了，强迫症也犯了，同时也没有好办法解决就只好自己动手了"><a href="#今天手贱网硬盘里干了个Xcode，结果传一半断了，然后就删不掉了，之前在同事的硬盘上出现过这个问题，今天摊到自己头上了，强迫症也犯了，同时也没有好办法解决就只好自己动手了" class="headerlink" title="今天手贱网硬盘里干了个Xcode，结果传一半断了，然后就删不掉了，之前在同事的硬盘上出现过这个问题，今天摊到自己头上了，强迫症也犯了，同时也没有好办法解决就只好自己动手了"></a>今天手贱网硬盘里干了个Xcode，结果传一半断了，然后就删不掉了，之前在同事的硬盘上出现过这个问题，今天摊到自己头上了，强迫症也犯了，同时也没有好办法解决就只好自己动手了</h3><h3 id="首先命令行打开隐藏文件"><a href="#首先命令行打开隐藏文件" class="headerlink" title="首先命令行打开隐藏文件"></a>首先命令行打开隐藏文件</h3><h3 id="cd进入硬盘"><a href="#cd进入硬盘" class="headerlink" title="cd进入硬盘"></a>cd进入硬盘</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf .Trash/</span><br></pre></td></tr></table></figure>
-<h3 id="解决了～不过过程很慢，要耐心等待"><a href="#解决了～不过过程很慢，要耐心等待" class="headerlink" title="解决了～不过过程很慢，要耐心等待"></a>解决了～不过过程很慢，要耐心等待</h3>
         </div>
     
 
@@ -346,8 +394,8 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/2016/01/22/Mac/Mac_关闭DashBoard/">
-                关闭DashBoard
+            <a href="/2016/01/22/Mac/Mac_清空废纸篓/">
+                清空废纸篓
             </a>
         </h1>
         <div class="post-info">
@@ -365,8 +413,7 @@
 
     
         <div class="content">
-            <h1 id="关闭DashBoard"><a href="#关闭DashBoard" class="headerlink" title="关闭DashBoard"></a>关闭DashBoard</h1><h3 id="仪表盘，曾经一度是-OS-X-的亮点之处，给前几代的-OS-X-用户提供了很多便利，利用小插件（Widgets）来管理日常简单工作，非常方便。在多桌面管理界面（Mission-Control）也能看见它的面孔。"><a href="#仪表盘，曾经一度是-OS-X-的亮点之处，给前几代的-OS-X-用户提供了很多便利，利用小插件（Widgets）来管理日常简单工作，非常方便。在多桌面管理界面（Mission-Control）也能看见它的面孔。" class="headerlink" title="仪表盘，曾经一度是 OS X 的亮点之处，给前几代的 OS X 用户提供了很多便利，利用小插件（Widgets）来管理日常简单工作，非常方便。在多桌面管理界面（Mission Control）也能看见它的面孔。"></a>仪表盘，曾经一度是 OS X 的亮点之处，给前几代的 OS X 用户提供了很多便利，利用小插件（Widgets）来管理日常简单工作，非常方便。在多桌面管理界面（Mission Control）也能看见它的面孔。</h3><h3 id="然而如今的-OS-X-有了更多其他的功能，更快的程序启动速度，完全不需要这个-Dashboard-来完成任务了，反而成了一种累赘。显然，仪表盘已经被苹果抛弃了，没有原来那样的实际用途，就连-UI-也和-Yosemite-的扁平界面违和不以。那作为用户也得表示表示，高冷地把它禁用掉，省着碍眼。"><a href="#然而如今的-OS-X-有了更多其他的功能，更快的程序启动速度，完全不需要这个-Dashboard-来完成任务了，反而成了一种累赘。显然，仪表盘已经被苹果抛弃了，没有原来那样的实际用途，就连-UI-也和-Yosemite-的扁平界面违和不以。那作为用户也得表示表示，高冷地把它禁用掉，省着碍眼。" class="headerlink" title="然而如今的 OS X 有了更多其他的功能，更快的程序启动速度，完全不需要这个 Dashboard 来完成任务了，反而成了一种累赘。显然，仪表盘已经被苹果抛弃了，没有原来那样的实际用途，就连 UI 也和 Yosemite 的扁平界面违和不以。那作为用户也得表示表示，高冷地把它禁用掉，省着碍眼。"></a>然而如今的 OS X 有了更多其他的功能，更快的程序启动速度，完全不需要这个 Dashboard 来完成任务了，反而成了一种累赘。显然，仪表盘已经被苹果抛弃了，没有原来那样的实际用途，就连 UI 也和 Yosemite 的扁平界面违和不以。那作为用户也得表示表示，高冷地把它禁用掉，省着碍眼。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dashboard mcx-disabled -boolean YES &amp;&amp; killall Dock</span><br></pre></td></tr></table></figure>
-<h3 id="Dock-栏会消失并重新浮现，现在用触控板向右滑动，发现仪表盘的确消失了。"><a href="#Dock-栏会消失并重新浮现，现在用触控板向右滑动，发现仪表盘的确消失了。" class="headerlink" title="Dock 栏会消失并重新浮现，现在用触控板向右滑动，发现仪表盘的确消失了。"></a>Dock 栏会消失并重新浮现，现在用触控板向右滑动，发现仪表盘的确消失了。</h3><h3 id="如果想再看到仪表盘请键入以下命令"><a href="#如果想再看到仪表盘请键入以下命令" class="headerlink" title="如果想再看到仪表盘请键入以下命令"></a>如果想再看到仪表盘请键入以下命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dashboard mcx-disabled -boolean NO &amp;&amp; killall Dock</span><br></pre></td></tr></table></figure>
+            <h1 id="清空废纸篓"><a href="#清空废纸篓" class="headerlink" title="清空废纸篓"></a>清空废纸篓</h1><h3 id="废纸篓清空不了的问题"><a href="#废纸篓清空不了的问题" class="headerlink" title="废纸篓清空不了的问题"></a>废纸篓清空不了的问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf ~/.Trash/</span><br></pre></td></tr></table></figure>
 
         </div>
     
@@ -423,8 +470,8 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/2016/01/22/Mac/Mac_清空废纸篓/">
-                清空废纸篓
+            <a href="/2016/01/22/Mac/Mac_关闭DashBoard/">
+                关闭DashBoard
             </a>
         </h1>
         <div class="post-info">
@@ -442,7 +489,8 @@
 
     
         <div class="content">
-            <h1 id="清空废纸篓"><a href="#清空废纸篓" class="headerlink" title="清空废纸篓"></a>清空废纸篓</h1><h3 id="废纸篓清空不了的问题"><a href="#废纸篓清空不了的问题" class="headerlink" title="废纸篓清空不了的问题"></a>废纸篓清空不了的问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf ~/.Trash/</span><br></pre></td></tr></table></figure>
+            <h1 id="关闭DashBoard"><a href="#关闭DashBoard" class="headerlink" title="关闭DashBoard"></a>关闭DashBoard</h1><h3 id="仪表盘，曾经一度是-OS-X-的亮点之处，给前几代的-OS-X-用户提供了很多便利，利用小插件（Widgets）来管理日常简单工作，非常方便。在多桌面管理界面（Mission-Control）也能看见它的面孔。"><a href="#仪表盘，曾经一度是-OS-X-的亮点之处，给前几代的-OS-X-用户提供了很多便利，利用小插件（Widgets）来管理日常简单工作，非常方便。在多桌面管理界面（Mission-Control）也能看见它的面孔。" class="headerlink" title="仪表盘，曾经一度是 OS X 的亮点之处，给前几代的 OS X 用户提供了很多便利，利用小插件（Widgets）来管理日常简单工作，非常方便。在多桌面管理界面（Mission Control）也能看见它的面孔。"></a>仪表盘，曾经一度是 OS X 的亮点之处，给前几代的 OS X 用户提供了很多便利，利用小插件（Widgets）来管理日常简单工作，非常方便。在多桌面管理界面（Mission Control）也能看见它的面孔。</h3><h3 id="然而如今的-OS-X-有了更多其他的功能，更快的程序启动速度，完全不需要这个-Dashboard-来完成任务了，反而成了一种累赘。显然，仪表盘已经被苹果抛弃了，没有原来那样的实际用途，就连-UI-也和-Yosemite-的扁平界面违和不以。那作为用户也得表示表示，高冷地把它禁用掉，省着碍眼。"><a href="#然而如今的-OS-X-有了更多其他的功能，更快的程序启动速度，完全不需要这个-Dashboard-来完成任务了，反而成了一种累赘。显然，仪表盘已经被苹果抛弃了，没有原来那样的实际用途，就连-UI-也和-Yosemite-的扁平界面违和不以。那作为用户也得表示表示，高冷地把它禁用掉，省着碍眼。" class="headerlink" title="然而如今的 OS X 有了更多其他的功能，更快的程序启动速度，完全不需要这个 Dashboard 来完成任务了，反而成了一种累赘。显然，仪表盘已经被苹果抛弃了，没有原来那样的实际用途，就连 UI 也和 Yosemite 的扁平界面违和不以。那作为用户也得表示表示，高冷地把它禁用掉，省着碍眼。"></a>然而如今的 OS X 有了更多其他的功能，更快的程序启动速度，完全不需要这个 Dashboard 来完成任务了，反而成了一种累赘。显然，仪表盘已经被苹果抛弃了，没有原来那样的实际用途，就连 UI 也和 Yosemite 的扁平界面违和不以。那作为用户也得表示表示，高冷地把它禁用掉，省着碍眼。</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dashboard mcx-disabled -boolean YES &amp;&amp; killall Dock</span><br></pre></td></tr></table></figure>
+<h3 id="Dock-栏会消失并重新浮现，现在用触控板向右滑动，发现仪表盘的确消失了。"><a href="#Dock-栏会消失并重新浮现，现在用触控板向右滑动，发现仪表盘的确消失了。" class="headerlink" title="Dock 栏会消失并重新浮现，现在用触控板向右滑动，发现仪表盘的确消失了。"></a>Dock 栏会消失并重新浮现，现在用触控板向右滑动，发现仪表盘的确消失了。</h3><h3 id="如果想再看到仪表盘请键入以下命令"><a href="#如果想再看到仪表盘请键入以下命令" class="headerlink" title="如果想再看到仪表盘请键入以下命令"></a>如果想再看到仪表盘请键入以下命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">defaults write com.apple.dashboard mcx-disabled -boolean NO &amp;&amp; killall Dock</span><br></pre></td></tr></table></figure>
 
         </div>
     
@@ -485,44 +533,6 @@
 
 </div>
             
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/01/21/技术/技术_hexo部署之后没有标签和分类的主页/">
-                hexo部署问题总结
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2016-01-21</span>
-            
-            
-            
-                <span class="category">
-                    <a href="/categories/技术/">技术</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <h1 id="hexo部署问题总结"><a href="#hexo部署问题总结" class="headerlink" title="hexo部署问题总结"></a>hexo部署问题总结</h1><hr>
-<h3 id="hexo部署之后没有标签和分类的主页"><a href="#hexo部署之后没有标签和分类的主页" class="headerlink" title="hexo部署之后没有标签和分类的主页"></a>hexo部署之后没有标签和分类的主页</h3><h3 id="go-to-your-hexo-folder"><a href="#go-to-your-hexo-folder" class="headerlink" title="go to your hexo folder"></a>go to your hexo folder</h3><h3 id="execute-command"><a href="#execute-command" class="headerlink" title="execute command"></a>execute command</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<h3 id="modify-…-source-tags-index-md-OR-…-source-categories-index-md-add-line"><a href="#modify-…-source-tags-index-md-OR-…-source-categories-index-md-add-line" class="headerlink" title="modify …/source/tags/index.md  OR  …/source/categories/index.md, add line"></a>modify …/source/tags/index.md  OR  …/source/categories/index.md, add line</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: &quot;tags&quot;  OR  type: &quot;categories&quot;</span><br></pre></td></tr></table></figure>
-<h3 id="if-you-don’t-want-to-have-comments-on-that-page-also-add"><a href="#if-you-don’t-want-to-have-comments-on-that-page-also-add" class="headerlink" title="if you don’t want to have comments on that page, also add"></a>if you don’t want to have comments on that page, also add</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">comments: false</span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="hexo部署失败"><a href="#hexo部署失败" class="headerlink" title="hexo部署失败"></a>hexo部署失败</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Deployer not found: git</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<h3 id="即可。"><a href="#即可。" class="headerlink" title="即可。"></a>即可。</h3>
-        </div>
-    
-
-</div>
-            
         </section>
     </div>
 </div>
@@ -556,13 +566,17 @@
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
                 <h2>About</h2>
                 <p>
-                    Powered  By <a href="https://hexo.io/"> Hexo</a> &nbsp; & &nbsp; <a href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">JonaThan Klughertz - Alpha-dust</a> <br /> Hosted by <a href="https://pages.coding.me/">Coding Pages</a>
+                    Powered  By <a href="https://hexo.io/"> Hexo</a> &nbsp; & &nbsp; <a href="http://www.codeblocq.com/assets/projects/hexo-theme-alpha-dust/">JonaThan Klughertz - Alpha-dust</a> <br /> Hosted by <a href="https://pages.github.com/">Github Pages</a>
                 </p>
             </div>
             
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
         <h2>Recent Posts</h2>
         <ul>
+            
+            <li>
+                <a class="footer-post" href="/2018/09/03/2018/2018_Consideration 180903/">Consideration 180903</a>
+            </li>
             
             <li>
                 <a class="footer-post" href="/2018/06/13/技术/技术_Nginx部署静态页出现中文乱码/">Nginx部署静态页出现中文乱码</a>
@@ -576,10 +590,6 @@
                 <a class="footer-post" href="/2018/06/07/技术/技术_Jenkins FAQ/">Jenkins FAQ</a>
             </li>
             
-            <li>
-                <a class="footer-post" href="/2017/10/04/iOS/iOS_日常整理/">日常整理</a>
-            </li>
-            
         </ul>
     </div>
 
@@ -591,6 +601,10 @@
     <ul>
         
         <li>
+            <a class="footer-post" href="/categories/2018/">2018</a>
+        </li>
+        
+        <li>
             <a class="footer-post" href="/categories/React-Native/">React Native</a>
         </li>
         
@@ -600,10 +614,6 @@
         
         <li>
             <a class="footer-post" href="/categories/Windows/">Windows</a>
-        </li>
-        
-        <li>
-            <a class="footer-post" href="/categories/技术/">技术</a>
         </li>
         
     </ul>
