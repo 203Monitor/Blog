@@ -217,44 +217,6 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/2016/01/21/技术/技术_hexo部署之后没有标签和分类的主页/">
-                hexo部署问题总结
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2016-01-21</span>
-            
-            
-            
-                <span class="category">
-                    <a href="/categories/技术/">技术</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <h1 id="hexo部署问题总结"><a href="#hexo部署问题总结" class="headerlink" title="hexo部署问题总结"></a>hexo部署问题总结</h1><hr>
-<h3 id="hexo部署之后没有标签和分类的主页"><a href="#hexo部署之后没有标签和分类的主页" class="headerlink" title="hexo部署之后没有标签和分类的主页"></a>hexo部署之后没有标签和分类的主页</h3><h3 id="go-to-your-hexo-folder"><a href="#go-to-your-hexo-folder" class="headerlink" title="go to your hexo folder"></a>go to your hexo folder</h3><h3 id="execute-command"><a href="#execute-command" class="headerlink" title="execute command"></a>execute command</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<h3 id="modify-…-source-tags-index-md-OR-…-source-categories-index-md-add-line"><a href="#modify-…-source-tags-index-md-OR-…-source-categories-index-md-add-line" class="headerlink" title="modify …/source/tags/index.md  OR  …/source/categories/index.md, add line"></a>modify …/source/tags/index.md  OR  …/source/categories/index.md, add line</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: &quot;tags&quot;  OR  type: &quot;categories&quot;</span><br></pre></td></tr></table></figure>
-<h3 id="if-you-don’t-want-to-have-comments-on-that-page-also-add"><a href="#if-you-don’t-want-to-have-comments-on-that-page-also-add" class="headerlink" title="if you don’t want to have comments on that page, also add"></a>if you don’t want to have comments on that page, also add</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">comments: false</span><br></pre></td></tr></table></figure>
-<hr>
-<h3 id="hexo部署失败"><a href="#hexo部署失败" class="headerlink" title="hexo部署失败"></a>hexo部署失败</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Deployer not found: git</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<h3 id="即可。"><a href="#即可。" class="headerlink" title="即可。"></a>即可。</h3>
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
             <a href="/2016/01/21/Linux/Linux_vim基本操作/">
                 vim基本操作
             </a>
@@ -285,8 +247,8 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/2016/01/21/iOS/iOS_UIButton响应传参数/">
-                UIButton响应传参数
+            <a href="/2016/01/21/技术/技术_hexo部署之后没有标签和分类的主页/">
+                hexo部署问题总结
             </a>
         </h1>
         <div class="post-info">
@@ -296,7 +258,7 @@
             
             
                 <span class="category">
-                    <a href="/categories/iOS/">iOS</a>
+                    <a href="/categories/技术/">技术</a>
                 </span>
             
         </div>
@@ -304,16 +266,15 @@
 
     
         <div class="content">
-            <h1 id="UIButton响应传参数"><a href="#UIButton响应传参数" class="headerlink" title="UIButton响应传参数"></a>UIButton响应传参数</h1><h3 id="开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，"><a href="#开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，" class="headerlink" title="开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，"></a>开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;</span><br></pre></td></tr></table></figure>
-<h3 id="方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。-我们以UITableView-为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是-如何在点击UIButton时获得cell。可以通过以下两种方法实现。"><a href="#方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。-我们以UITableView-为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是-如何在点击UIButton时获得cell。可以通过以下两种方法实现。" class="headerlink" title="方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。 我们以UITableView 为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是 如何在点击UIButton时获得cell。可以通过以下两种方法实现。"></a>方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。 我们以UITableView 为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是 如何在点击UIButton时获得cell。可以通过以下两种方法实现。</h3><h3 id="使用delegate-首先，在CustomCell类文件中定义protocol，有如下定义"><a href="#使用delegate-首先，在CustomCell类文件中定义protocol，有如下定义" class="headerlink" title="使用delegate 首先，在CustomCell类文件中定义protocol，有如下定义"></a>使用delegate 首先，在CustomCell类文件中定义protocol，有如下定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@protocol CustomCellProtocol</span><br><span class="line">- (void)customCell:(CustomCell *)cell didTapButton:(UIButton *)button;</span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
-<h3 id="将UIButton的响应加在CustomCell文件中，比如这个响应叫做"><a href="#将UIButton的响应加在CustomCell文件中，比如这个响应叫做" class="headerlink" title="将UIButton的响应加在CustomCell文件中，比如这个响应叫做"></a>将UIButton的响应加在CustomCell文件中，比如这个响应叫做</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (IBAction)buttonTarget:(id)sender;</span><br></pre></td></tr></table></figure>
-<h3 id="那么在点击button时，就会调用这个方法。这个方法可以实现如下，"><a href="#那么在点击button时，就会调用这个方法。这个方法可以实现如下，" class="headerlink" title="那么在点击button时，就会调用这个方法。这个方法可以实现如下，"></a>那么在点击button时，就会调用这个方法。这个方法可以实现如下，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (IBAction)buttonTarget:(id)sender &#123;</span><br><span class="line">    if ([self.delegate respondsToSelector:@selector(customCell:didTapButton:)]) &#123;</span><br><span class="line">        [self.delegate performSelector:@selector(customCell:didTapButton:) withObject:self   withObject:self.button];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。"><a href="#然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。" class="headerlink" title="然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。"></a>然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。</h3><h3 id="在ViewController中添加响应-第二种方法时在"><a href="#在ViewController中添加响应-第二种方法时在" class="headerlink" title="在ViewController中添加响应 第二种方法时在"></a>在ViewController中添加响应 第二种方法时在</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;</span><br></pre></td></tr></table></figure>
-<h3 id="方法中直接给UIButton添加响应。实现如下，"><a href="#方法中直接给UIButton添加响应。实现如下，" class="headerlink" title="方法中直接给UIButton添加响应。实现如下，"></a>方法中直接给UIButton添加响应。实现如下，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-(UITableViewCell *)tableView:(UITableView *)atableView cellForRowAtIndexPath:(NSIndexPath *)indexPath &#123;</span><br><span class="line">    CustomCell *cell = [atableView         dequeueReusableCellWithIdentifier:@&quot;CustomCell&quot;];</span><br><span class="line">    [cell.button addTarget:self action:@selector(didTapButton:)   forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">    return cell;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="那么点击button时就会调用"><a href="#那么点击button时就会调用" class="headerlink" title="那么点击button时就会调用"></a>那么点击button时就会调用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)didTapButton:(UIButton *)sender</span><br></pre></td></tr></table></figure>
-<h3 id="剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，"><a href="#剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，" class="headerlink" title="剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，"></a>剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- (void)didTapButton:(UIButton *)sender &#123;</span><br><span class="line">    CGRect buttonRect = sender.frame;</span><br><span class="line">    for (CustomCell *cell in [tableView visibleCells]) &#123;</span><br><span class="line">        if (CGRectIntersectsRect(buttonRect, cell.frame)) &#123;</span><br><span class="line">            //cell就是所要获得的</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><a href="http://innovatence.com/?p=196" target="_blank" rel="noopener">原文链接</a></p>
-
+            <h1 id="hexo部署问题总结"><a href="#hexo部署问题总结" class="headerlink" title="hexo部署问题总结"></a>hexo部署问题总结</h1><hr>
+<h3 id="hexo部署之后没有标签和分类的主页"><a href="#hexo部署之后没有标签和分类的主页" class="headerlink" title="hexo部署之后没有标签和分类的主页"></a>hexo部署之后没有标签和分类的主页</h3><h3 id="go-to-your-hexo-folder"><a href="#go-to-your-hexo-folder" class="headerlink" title="go to your hexo folder"></a>go to your hexo folder</h3><h3 id="execute-command"><a href="#execute-command" class="headerlink" title="execute command"></a>execute command</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<h3 id="modify-…-source-tags-index-md-OR-…-source-categories-index-md-add-line"><a href="#modify-…-source-tags-index-md-OR-…-source-categories-index-md-add-line" class="headerlink" title="modify …/source/tags/index.md  OR  …/source/categories/index.md, add line"></a>modify …/source/tags/index.md  OR  …/source/categories/index.md, add line</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type: &quot;tags&quot;  OR  type: &quot;categories&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="if-you-don’t-want-to-have-comments-on-that-page-also-add"><a href="#if-you-don’t-want-to-have-comments-on-that-page-also-add" class="headerlink" title="if you don’t want to have comments on that page, also add"></a>if you don’t want to have comments on that page, also add</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">comments: false</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="hexo部署失败"><a href="#hexo部署失败" class="headerlink" title="hexo部署失败"></a>hexo部署失败</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR Deployer not found: git</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<h3 id="即可。"><a href="#即可。" class="headerlink" title="即可。"></a>即可。</h3>
         </div>
     
 
@@ -374,6 +335,45 @@
 <h3 id="M-删除文件"><a href="#M-删除文件" class="headerlink" title="M. 删除文件"></a>M. 删除文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git rm 文件名    （同时删除工作目录与本地仓库的文件）</span><br><span class="line">git rm --cached 文件名     （删除本地仓库文件，并不影响工作目录）</span><br></pre></td></tr></table></figure>
 <h3 id="N-改变上传地址"><a href="#N-改变上传地址" class="headerlink" title="N. 改变上传地址"></a>N. 改变上传地址</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin ssh://git@git.sailor.cn/~/WeiYu</span><br></pre></td></tr></table></figure>
 <h3 id="O-根据服务器的地址创建本地git与服务器的地址关联"><a href="#O-根据服务器的地址创建本地git与服务器的地址关联" class="headerlink" title="O. 根据服务器的地址创建本地git与服务器的地址关联"></a>O. 根据服务器的地址创建本地git与服务器的地址关联</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin ssh://lht@git_server/var/lib/scm/git/lht/test.git</span><br></pre></td></tr></table></figure>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2016/01/21/iOS/iOS_UIButton响应传参数/">
+                UIButton响应传参数
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2016-01-21</span>
+            
+            
+            
+                <span class="category">
+                    <a href="/categories/iOS/">iOS</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="UIButton响应传参数"><a href="#UIButton响应传参数" class="headerlink" title="UIButton响应传参数"></a>UIButton响应传参数</h1><h3 id="开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，"><a href="#开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，" class="headerlink" title="开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，"></a>开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;</span><br></pre></td></tr></table></figure>
+<h3 id="方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。-我们以UITableView-为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是-如何在点击UIButton时获得cell。可以通过以下两种方法实现。"><a href="#方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。-我们以UITableView-为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是-如何在点击UIButton时获得cell。可以通过以下两种方法实现。" class="headerlink" title="方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。 我们以UITableView 为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是 如何在点击UIButton时获得cell。可以通过以下两种方法实现。"></a>方法是无法传参数的，能得到的只是响应的UIButton。下面我们来学习一下如何通过UIButton来“传参数”。 我们以UITableView 为例，在UITableViewCell中定义一个cell，我们称之为CustomCell，cell上加有一个UIButton的控件。我们要做的是 如何在点击UIButton时获得cell。可以通过以下两种方法实现。</h3><h3 id="使用delegate-首先，在CustomCell类文件中定义protocol，有如下定义"><a href="#使用delegate-首先，在CustomCell类文件中定义protocol，有如下定义" class="headerlink" title="使用delegate 首先，在CustomCell类文件中定义protocol，有如下定义"></a>使用delegate 首先，在CustomCell类文件中定义protocol，有如下定义</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@protocol CustomCellProtocol</span><br><span class="line">- (void)customCell:(CustomCell *)cell didTapButton:(UIButton *)button;</span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<h3 id="将UIButton的响应加在CustomCell文件中，比如这个响应叫做"><a href="#将UIButton的响应加在CustomCell文件中，比如这个响应叫做" class="headerlink" title="将UIButton的响应加在CustomCell文件中，比如这个响应叫做"></a>将UIButton的响应加在CustomCell文件中，比如这个响应叫做</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (IBAction)buttonTarget:(id)sender;</span><br></pre></td></tr></table></figure>
+<h3 id="那么在点击button时，就会调用这个方法。这个方法可以实现如下，"><a href="#那么在点击button时，就会调用这个方法。这个方法可以实现如下，" class="headerlink" title="那么在点击button时，就会调用这个方法。这个方法可以实现如下，"></a>那么在点击button时，就会调用这个方法。这个方法可以实现如下，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (IBAction)buttonTarget:(id)sender &#123;</span><br><span class="line">    if ([self.delegate respondsToSelector:@selector(customCell:didTapButton:)]) &#123;</span><br><span class="line">        [self.delegate performSelector:@selector(customCell:didTapButton:) withObject:self   withObject:self.button];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。"><a href="#然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。" class="headerlink" title="然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。"></a>然后在UIViewController里实现代理方法，这样，就能获得这个UIButton所在的UITableViewCell。</h3><h3 id="在ViewController中添加响应-第二种方法时在"><a href="#在ViewController中添加响应-第二种方法时在" class="headerlink" title="在ViewController中添加响应 第二种方法时在"></a>在ViewController中添加响应 第二种方法时在</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;</span><br></pre></td></tr></table></figure>
+<h3 id="方法中直接给UIButton添加响应。实现如下，"><a href="#方法中直接给UIButton添加响应。实现如下，" class="headerlink" title="方法中直接给UIButton添加响应。实现如下，"></a>方法中直接给UIButton添加响应。实现如下，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-(UITableViewCell *)tableView:(UITableView *)atableView cellForRowAtIndexPath:(NSIndexPath *)indexPath &#123;</span><br><span class="line">    CustomCell *cell = [atableView         dequeueReusableCellWithIdentifier:@&quot;CustomCell&quot;];</span><br><span class="line">    [cell.button addTarget:self action:@selector(didTapButton:)   forControlEvents:UIControlEventTouchUpInside];</span><br><span class="line">    return cell;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="那么点击button时就会调用"><a href="#那么点击button时就会调用" class="headerlink" title="那么点击button时就会调用"></a>那么点击button时就会调用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)didTapButton:(UIButton *)sender</span><br></pre></td></tr></table></figure>
+<h3 id="剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，"><a href="#剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，" class="headerlink" title="剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，"></a>剩下的就是如何通过这个sender获得它所在的cell。我们这么实现这个方法，</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- (void)didTapButton:(UIButton *)sender &#123;</span><br><span class="line">    CGRect buttonRect = sender.frame;</span><br><span class="line">    for (CustomCell *cell in [tableView visibleCells]) &#123;</span><br><span class="line">        if (CGRectIntersectsRect(buttonRect, cell.frame)) &#123;</span><br><span class="line">            //cell就是所要获得的</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="http://innovatence.com/?p=196" target="_blank" rel="noopener">原文链接</a></p>
 
         </div>
     

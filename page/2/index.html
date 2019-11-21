@@ -325,37 +325,6 @@
 
     <div class="post-header index">
         <h1 class="title">
-            <a href="/2017/03/10/iOS/iOS_UIButton切换selected状态标题闪烁问题/">
-                UIButton切换selected状态标题闪烁问题
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2017-03-10</span>
-            
-            
-            
-                <span class="category">
-                    <a href="/categories/iOS/">iOS</a>
-                </span>
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <h1 id="UIButton切换selected状态标题闪烁问题"><a href="#UIButton切换selected状态标题闪烁问题" class="headerlink" title="UIButton切换selected状态标题闪烁问题"></a>UIButton切换selected状态标题闪烁问题</h1><h3 id="在使用UIButton时会遇到切换selected状态然后更换标题，这时候标题会闪，因此只修改normal状态的文字就好了，像这样"><a href="#在使用UIButton时会遇到切换selected状态然后更换标题，这时候标题会闪，因此只修改normal状态的文字就好了，像这样" class="headerlink" title="在使用UIButton时会遇到切换selected状态然后更换标题，这时候标题会闪，因此只修改normal状态的文字就好了，像这样"></a>在使用UIButton时会遇到切换selected状态然后更换标题，这时候标题会闪，因此只修改normal状态的文字就好了，像这样</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">WS(weakSelf);</span><br><span class="line">[self.joinButton addAction:^(UIButton *button) &#123;</span><br><span class="line">weakSelf.callBack(weakSelf.data,weakSelf.joinButton.isSelected);</span><br><span class="line">[weakSelf.joinButton setSelected:!weakSelf.joinButton.isSelected];</span><br><span class="line">&#125;];</span><br><span class="line">[RACObserve(self.joinButton, selected) subscribeNext:^(id x) &#123;</span><br><span class="line">[weakSelf.joinButton setTitleWithoutAnimate:![x boolValue] ? @&quot;加入&quot; : @&quot;已加入&quot; forState:UIControlStateNormal];</span><br><span class="line">[weakSelf.joinButton setBackgroundColor:[x boolValue] ? kSetColor_Hex(@&quot;C9C9C9&quot;) : kColorBlue];</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
-
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
             <a href="/2017/03/10/iOS/iOS_TTTAttributedLabel使用心得/">
                 TTTAttributedLabel使用心得
             </a>
@@ -385,6 +354,37 @@
 <li>通过CTFrame获取CFArray，获取区域内文字的行数</li>
 <li>遍历每一行,获取每一行的矩形坐标，与当前点击位置做比较，判断是否点在文字范围内，如果在范围内则再判断是范围内那个字符串</li>
 </ul>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2017/03/10/iOS/iOS_UIButton切换selected状态标题闪烁问题/">
+                UIButton切换selected状态标题闪烁问题
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2017-03-10</span>
+            
+            
+            
+                <span class="category">
+                    <a href="/categories/iOS/">iOS</a>
+                </span>
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="UIButton切换selected状态标题闪烁问题"><a href="#UIButton切换selected状态标题闪烁问题" class="headerlink" title="UIButton切换selected状态标题闪烁问题"></a>UIButton切换selected状态标题闪烁问题</h1><h3 id="在使用UIButton时会遇到切换selected状态然后更换标题，这时候标题会闪，因此只修改normal状态的文字就好了，像这样"><a href="#在使用UIButton时会遇到切换selected状态然后更换标题，这时候标题会闪，因此只修改normal状态的文字就好了，像这样" class="headerlink" title="在使用UIButton时会遇到切换selected状态然后更换标题，这时候标题会闪，因此只修改normal状态的文字就好了，像这样"></a>在使用UIButton时会遇到切换selected状态然后更换标题，这时候标题会闪，因此只修改normal状态的文字就好了，像这样</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">WS(weakSelf);</span><br><span class="line">[self.joinButton addAction:^(UIButton *button) &#123;</span><br><span class="line">weakSelf.callBack(weakSelf.data,weakSelf.joinButton.isSelected);</span><br><span class="line">[weakSelf.joinButton setSelected:!weakSelf.joinButton.isSelected];</span><br><span class="line">&#125;];</span><br><span class="line">[RACObserve(self.joinButton, selected) subscribeNext:^(id x) &#123;</span><br><span class="line">[weakSelf.joinButton setTitleWithoutAnimate:![x boolValue] ? @&quot;加入&quot; : @&quot;已加入&quot; forState:UIControlStateNormal];</span><br><span class="line">[weakSelf.joinButton setBackgroundColor:[x boolValue] ? kSetColor_Hex(@&quot;C9C9C9&quot;) : kColorBlue];</span><br><span class="line">&#125;];</span><br></pre></td></tr></table></figure>
 
         </div>
     
