@@ -4,7 +4,7 @@
   <id>203ny.tk/</id>
   <title>Yucapri</title>
   <subtitle>Blog of Yucapri</subtitle>
-  <updated>2022-10-07T00:32:28+08:00</updated>
+  <updated>2022-10-07T08:54:16+08:00</updated>
   <author>
     <name>Yucapri</name>
     <uri>203ny.tk/</uri>
@@ -20,21 +20,21 @@
 
   
   <entry>
-    <title>爬虫基础</title>
-    <link href="203ny.tk/posts/%E7%88%AC%E8%99%AB-%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80/" rel="alternate" type="text/html" title="爬虫基础" />
-    <published>2022-10-07T00:03:00+08:00</published>
+    <title>TESTNG</title>
+    <link href="203ny.tk/posts/%E6%B5%8B%E8%AF%95-TESTNG/" rel="alternate" type="text/html" title="TESTNG" />
+    <published>2022-10-07T08:49:00+08:00</published>
   
-    <updated>2022-10-07T00:03:00+08:00</updated>
+    <updated>2022-10-07T08:49:00+08:00</updated>
   
-    <id>203ny.tk/posts/%E7%88%AC%E8%99%AB-%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80/</id>
-    <content src="203ny.tk/posts/%E7%88%AC%E8%99%AB-%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80/" />
+    <id>203ny.tk/posts/%E6%B5%8B%E8%AF%95-TESTNG/</id>
+    <content src="203ny.tk/posts/%E6%B5%8B%E8%AF%95-TESTNG/" />
     <author>
       <name>Yucapri</name>
     </author>
 
   
     
-    <category term="爬虫" />
+    <category term="测试" />
     
   
 
@@ -46,14 +46,147 @@
 
 
 
-      爬虫基础
+      TESTNG
 
-开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是，
+    </summary>
+  
 
-- (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
+  </entry>
+
+  
+  <entry>
+    <title>selinium</title>
+    <link href="203ny.tk/posts/%E6%B5%8B%E8%AF%95-selinium/" rel="alternate" type="text/html" title="selinium" />
+    <published>2022-10-07T08:48:00+08:00</published>
+  
+    <updated>2022-10-07T08:48:00+08:00</updated>
+  
+    <id>203ny.tk/posts/%E6%B5%8B%E8%AF%95-selinium/</id>
+    <content src="203ny.tk/posts/%E6%B5%8B%E8%AF%95-selinium/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="测试" />
+    
+  
+
+  
+    <summary>
+      
 
 
-原文链接
+
+
+
+      selinium
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>python基础</title>
+    <link href="203ny.tk/posts/%E7%BC%96%E7%A8%8B-python%E5%9F%BA%E7%A1%80/" rel="alternate" type="text/html" title="python基础" />
+    <published>2022-10-07T08:47:00+08:00</published>
+  
+    <updated>2022-10-07T08:47:00+08:00</updated>
+  
+    <id>203ny.tk/posts/%E7%BC%96%E7%A8%8B-python%E5%9F%BA%E7%A1%80/</id>
+    <content src="203ny.tk/posts/%E7%BC%96%E7%A8%8B-python%E5%9F%BA%E7%A1%80/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="编程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      python基础
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>javascript基础</title>
+    <link href="203ny.tk/posts/%E7%BC%96%E7%A8%8B-javascript%E5%9F%BA%E7%A1%80/" rel="alternate" type="text/html" title="javascript基础" />
+    <published>2022-10-07T08:47:00+08:00</published>
+  
+    <updated>2022-10-07T08:47:00+08:00</updated>
+  
+    <id>203ny.tk/posts/%E7%BC%96%E7%A8%8B-javascript%E5%9F%BA%E7%A1%80/</id>
+    <content src="203ny.tk/posts/%E7%BC%96%E7%A8%8B-javascript%E5%9F%BA%E7%A1%80/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="编程" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      javascript基础
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>测试理论</title>
+    <link href="203ny.tk/posts/%E6%B5%8B%E8%AF%95-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" rel="alternate" type="text/html" title="测试理论" />
+    <published>2022-10-07T08:46:00+08:00</published>
+  
+    <updated>2022-10-07T08:46:00+08:00</updated>
+  
+    <id>203ny.tk/posts/%E6%B5%8B%E8%AF%95-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/</id>
+    <content src="203ny.tk/posts/%E6%B5%8B%E8%AF%95-%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/" />
+    <author>
+      <name>Yucapri</name>
+    </author>
+
+  
+    
+    <category term="测试" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      测试理论
 
     </summary>
   
