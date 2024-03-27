@@ -1,104 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.124.1">
 
-  <head>
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Creating a New Theme &middot; Hugo Bootstrap v4 Blog</title>
+  <meta name="description" content="" />
 
-<meta property="og:title" content="Creating a New Theme" />
-<meta property="og:description" content="Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.org/2014/09/creating-a-new-theme/" />
-<meta property="article:published_time" content="2014-09-28T00:00:00+00:00" />
-<meta property="article:modified_time" content="2014-09-28T00:00:00+00:00" />
-
-
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Creating a New Theme"/>
-<meta name="twitter:description" content="Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme."/>
-<meta name="generator" content="Hugo 0.124.1">
+  
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://example.org/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
-    
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Creating a New Theme",
-  "url": "https://example.org/2014/09/creating-a-new-theme/",
-  "wordCount": "7232",
-  "datePublished": "2014-09-28T00:00:00+00:00",
-  "dateModified": "2014-09-28T00:00:00+00:00",
-  "author": {
-    "@type": "Person",
-    "name": "Michael Henderson"
-  }
-}
-</script>
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
 
+  
+  
+</head>
 
-
-    <link rel="canonical" href="https://example.org/2014/09/creating-a-new-theme/">
-
-    <title>Creating a New Theme | Hugo Bootstrap v4 Blog</title>
-
-    
-    <!-- combined, minified CSS -->
-    
-    <link href="https://example.org/css/style.0b72f41a0f22d687d912a8e7c945fc14c7a36daee062380f9fae9958e7d17da6.css" rel="stylesheet" integrity="sha256-C3L0Gg8i1ofZEqjnyUX8FMejba7gYjgPn66ZWOfRfaY=" crossorigin="anonymous">
-    
-
-    <!-- minified Font Awesome for SVG icons -->
-    
-    <script defer src="https://example.org/js/fontawesome.min.a290d22177f491b8a83b0ee7eb739224c57ab052d8fab69d8f52aab860e42027.js" integrity="sha256-opDSIXf0kbioOw7n63OSJMV6sFLY&#43;radj1KquGDkICc=" crossorigin="anonymous"></script>
-
-    <!-- RSS 2.0 feed -->
-    
-
-    
-
-  </head>
-
-  <body>
-
-    
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link " href="https://example.org/">Home</a>
-        </nav>
-      </div>
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://example.org/"><h1>Hugo Bootstrap v4 Blog</h1></a>
+      <p class="lead">
+       A simple Hugo theme based on the Bootstrap v4 blog example. 
+      </p>
     </div>
-    
 
-    
-    
-    <header class="blog-header">
-      <div class="container">
-        <h1 class="blog-title" dir="auto"><a href="https://example.org/" rel="home">Hugo Bootstrap v4 Blog</a></h1>
-        <p class="lead blog-description" dir="auto">A simple Hugo theme based on the Bootstrap v4 blog example.</p>
-      </div>
-    </header>
-    
-    
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://example.org/">Home</a> </li>
+        <li><a href="/2014/04/hugo-template-primer/"> (Hu)go Template Primer </a></li><li><a href="/2014/04/getting-started-with-hugo/"> Getting Started with Hugo </a></li><li><a href=""> tutorials </a></li>
+      </ul>
+    </nav>
 
-    
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 blog-main">
+    <p>&copy; 2024. All rights reserved. </p>
+  </div>
+</aside>
 
-          
-
-
-<article class="blog-post">
-  <header>
-    <h2 class="blog-post-title" dir="auto"><a href="https://example.org/2014/09/creating-a-new-theme/">Creating a New Theme</a></h2>
-    <p class="blog-post-meta">
-<time datetime="2014-09-28T00:00:00Z">Sun Sep 28, 2014</time>
-</p>
-  </header>
+    <main class="content container">
+    <div class="post">
+  <h1>Creating a New Theme</h1>
+  <time datetime=2014-09-28T00:00:00Z class="post-date">Sun, Sep 28, 2014</time>
   <h2 id="introduction">Introduction</h2>
 <p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p>
 <p>We&rsquo;ll start with creating a new site with a very basic template. Then we&rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.</p>
@@ -905,96 +858,13 @@ $ vi themes/zafta/layouts/_default/single.html
 <h3 id="dont-repeat-yourself">Don&rsquo;t Repeat Yourself</h3>
 <p>DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&rsquo;re figuring that out, accept that you&rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&rsquo;s okay to delay splitting up a template.</p>
 
-
-  
-
-  
-  <hr>
-  <footer>
-
-  
-    <section>
-    <h4>Share</h4>
-    <nav class="nav sharing-icons">
-      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fexample.org%2f2014%2f09%2fcreating-a-new-theme%2f" title="Share on Facebook"><span class="fab fa-facebook-f fa-2x" aria-hidden="true"></span></a>
-      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fexample.org%2f2014%2f09%2fcreating-a-new-theme%2f" title="Share on LinkedIn"><span class="fab fa-linkedin-in fa-2x" aria-hidden="true"></span></a>
-      <a class="nav-item" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fexample.org%2f2014%2f09%2fcreating-a-new-theme%2f&amp;text=Creating%20a%20New%20Theme" title="Tweet this"><span class="fab fa-twitter fa-2x"></span></a>
-    </nav>
-  </section>
-
-  
-
-  
-  </footer>
-  
-
-</article> 
+</div>
 
 
-
-        </div> <!-- /.blog-main -->
-
-        <aside class="col-sm-3 ml-auto blog-sidebar">
-  
-  <section class="sidebar-module sidebar-module-inset">
-    <h4>About</h4>
-    <p dir="auto">A simple Hugo theme based on the <a href="http://v4-alpha.getbootstrap.com/examples/blog/">Bootstrap v4 blog example</a>.</p>
-  </section>
-  
-
-  
-        <section class="sidebar-module">
-    <h4>Recent Posts</h4>
-    <ol class="list-unstyled">
-
-
-<li><a href="/2014/09/creating-a-new-theme/">Creating a New Theme</a></li>
-
-<li><a href="/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
-
-<li><a href="/2024/03/appwrite%E4%BD%BF%E7%94%A8/">appwrite使用</a></li>
-
-<li><a href="/2022/10/testng/">TESTNG</a></li>
-
-<li><a href="/2022/10/selinium/">selinium</a></li>
-
-    </ol>
-  </section>
-
-  
-
-  
-  <section class="sidebar-module">
-    <h4>Links</h4>
-    <ol class="list-unstyled">
-      
-      <li><a href="https://example.com">Link 1</a></li>
-      
-      <li><a href="https://example.org">Link 2</a></li>
-      
-    </ol>
-  </section>
-  
-</aside>
-
-
-      </div> <!-- /.row -->
-    </div> <!-- /.container -->
-    
+    </main>
 
     
-    <footer class="blog-footer">
-      <p dir="auto">
       
-      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
-      
-      </p>
-      <p>
-      <a href="#">Back to top</a>
-      </p>
-    </footer>
     
-
   </body>
-
 </html>
