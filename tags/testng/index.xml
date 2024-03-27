@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TESTNG on Hugo Bootstrap v4 Blog</title>
-    <link>https://example.org/tags/testng/</link>
+    <link>http://blog.yucapri.net/tags/testng/</link>
     <description>Recent content in TESTNG on Hugo Bootstrap v4 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Oct 2022 08:49:00 +0800</lastBuildDate>
-    <atom:link href="https://example.org/tags/testng/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.yucapri.net/tags/testng/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TESTNG</title>
-      <link>https://example.org/2022/10/testng/</link>
+      <link>http://blog.yucapri.net/2022/10/testng/</link>
       <pubDate>Fri, 07 Oct 2022 08:49:00 +0800</pubDate>
-      <guid>https://example.org/2022/10/testng/</guid>
+      <guid>http://blog.yucapri.net/2022/10/testng/</guid>
       <description>TESTNG </description>
     </item>
   </channel>
