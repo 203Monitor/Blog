@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日常 on Hugo Bootstrap v4 Blog</title>
+    <link>https://example.org/categories/%E6%97%A5%E5%B8%B8/</link>
+    <description>Recent content in 日常 on Hugo Bootstrap v4 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Mar 2024 23:32:59 +0800</lastBuildDate>
+    <atom:link href="https://example.org/categories/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>appwrite使用</title>
+      <link>https://example.org/2024/03/appwrite%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 25 Mar 2024 23:32:59 +0800</pubDate>
+      <guid>https://example.org/2024/03/appwrite%E4%BD%BF%E7%94%A8/</guid>
+      <description>categories: [日常] appwrite使用 1.注册账户 https://cloud.appwrite.io/register&#xA;2.创建一个组织 输入组织名称，选择免费计划（starter） 3.点击 Get started 4.点击 create project 创建工程 输入project id 默认区域，直接点击create 等待页面刷新&#xA;5.左侧菜单选择function 6.点击create function 选择node 直接下一步 还是下一步 依然下一步 选择关联github 登录后点击install 输入新建代码仓库的名称 根目录输入/，然后下一步 等待页面刷新，可以看到最新的ci结果 7.通过页面上Domains:域名访问即可 刷新页面查看最新ci结果 </description>
+    </item>
+    <item>
+      <title>Markdown语法之复选框</title>
+      <link>https://example.org/2021/02/markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/</link>
+      <pubDate>Mon, 08 Feb 2021 13:17:59 +0800</pubDate>
+      <guid>https://example.org/2021/02/markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/</guid>
+      <description>categories: [日常, 学习] 学习内容：Markdown复选框 在无序列表符号后面加上[]或者[x]代表选中或者未选中情况&#xA;- [x] ROW1 - [ ] ROW2 或者&#xA;+ [x] ROW1 + [ ] ROW2 或者&#xA;* [x] ROW1 * [ ] ROW2 效果如下：&#xA;ROW1 ROW2 </description>
+    </item>
+  </channel>
+</rss>

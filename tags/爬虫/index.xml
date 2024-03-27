@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>爬虫 on Hugo Bootstrap v4 Blog</title>
+    <link>https://example.org/tags/%E7%88%AC%E8%99%AB/</link>
+    <description>Recent content in 爬虫 on Hugo Bootstrap v4 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Oct 2022 00:03:00 +0800</lastBuildDate>
+    <atom:link href="https://example.org/tags/%E7%88%AC%E8%99%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>爬虫基础</title>
+      <link>https://example.org/2022/10/%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Fri, 07 Oct 2022 00:03:00 +0800</pubDate>
+      <guid>https://example.org/2022/10/%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80/</guid>
+      <description>爬虫基础 开发过程中，有些初学者经常会问，如何调用UIButton的响应时传入一个参数，但是， - (void)addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents; 原文链接</description>
+    </item>
+  </channel>
+</rss>
