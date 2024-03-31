@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>学习 on Yucapri</title>
+    <link>http://blog.yucapri.net/categories/%E5%AD%A6%E4%B9%A0/</link>
+    <description>Recent content in 学习 on Yucapri</description>
+    <image>
+      <title>Yucapri</title>
+      <url>http://blog.yucapri.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://blog.yucapri.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 08 Feb 2021 13:17:59 +0800</lastBuildDate>
+    <atom:link href="http://blog.yucapri.net/categories/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown语法之复选框</title>
+      <link>http://blog.yucapri.net/posts/2021-02-08-markdown-markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/</link>
+      <pubDate>Mon, 08 Feb 2021 13:17:59 +0800</pubDate>
+      <guid>http://blog.yucapri.net/posts/2021-02-08-markdown-markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/</guid>
+      <description>在无序列表符号后面加上[]或者[x]代表选中或者未选中情况 - [x] ROW1 - [ ] ROW2 或者
++ [x] ROW1 + [ ] ROW2 或者
+* [x] ROW1 * [ ] ROW2 效果如下：
+ROW1 ROW2 </description>
+    </item>
+    <item>
+      <title>科学上网大教程(持续更新)</title>
+      <link>http://blog.yucapri.net/posts/2016-05-21-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%A4%A7%E6%95%99%E7%A8%8B%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</link>
+      <pubDate>Sat, 21 May 2016 11:30:42 +0800</pubDate>
+      <guid>http://blog.yucapri.net/posts/2016-05-21-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%A4%A7%E6%95%99%E7%A8%8B%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</guid>
+      <description>GFW的日益强大，使国内的网络日益安全。不过真心苦了我们这帮程序员，要知道，看一个程序员是否优秀就看他如何使用Google。喜欢折腾的我当然是一直以优秀程序员自居，所以一定要做出些样子。这就总结了一些科学上网的小招子，望与各位想成为优秀程序员的人们共勉。 1.SSH Socks5 这是个很犀利的招式，windows怎么使用网上太多了，我就不说了，mac的用法更是简单，不过这一招并不在于怎么使用，前期攒起来才是最重要的。
+原料：Mac电脑一台，openshift／koding帐号一个 ssh -qTfnN -D port xxx@xxx.xx.x 打开浏览器，使用socks5代理，地址127.0.0.1:port
+注：关闭步骤 lsof -i tcp:端口号
+sudo kill -9 PID
+此招式缺点：一小时断一次，不过别太沉迷于墙外的世界可以规避这个风险 2.SSH Socks5 + polipo 终端科学上网 为终端设置Shadowsocks代理
+准备工作 配置好一个可用的shadowsocks
+安装 Mac下使用Homebrew安装 brew install polipo
+修改配置(Mac) 设置每次登陆启动polipo
+ln -sfv /usr/local/opt/polipo/*.plist ~/Library/LaunchAgents
+修改文件
+/usr/local/opt/polipo/homebrew.mxcl.polipo.plist
+设置parentProxy
+&amp;lt;key&amp;gt;ProgramArguments&amp;lt;/key&amp;gt; &amp;lt;array&amp;gt; &amp;lt;string&amp;gt;/usr/local/opt/polipo/bin/polipo&amp;lt;/string&amp;gt; &amp;lt;string&amp;gt;socksParentProxy=localhost:1080&amp;lt;/string&amp;gt; &amp;lt;/array&amp;gt; 修改的地方是增加了
+socksParentProxy=localhost:1080
+启动(Mac)
+launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.polipo.plist launchctl load ~/Library/LaunchAgents/homebrew.mxcl.polipo.plis 注意：请确保Shadowsocks正常工作。 验证及使用 安装完成就需要进行验证是否work。这里展示一个最简单的验证方法，打开终端，如下执行
+07:56:24-androidyue/var/log$ curl ip.gs 当前 IP：125.39.112.15 来自：中国天津天津 联通 08:09:23-androidyue/var/log$ http_proxy=http://localhost:8123 curl ip.gs 当前 IP：210.</description>
+    </item>
+  </channel>
+</rss>
