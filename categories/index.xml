@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Yucapri</title>
-    <link>http://blog.yucapri.net/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Yucapri</description>
     <image>
       <title>Yucapri</title>
-      <url>http://blog.yucapri.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://blog.yucapri.net/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Mar 2024 23:32:59 +0800</lastBuildDate>
-    <atom:link href="http://blog.yucapri.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>日常</title>
-      <link>http://blog.yucapri.net/categories/%E6%97%A5%E5%B8%B8/</link>
+      <link>http://localhost:1313/categories/%E6%97%A5%E5%B8%B8/</link>
       <pubDate>Mon, 25 Mar 2024 23:32:59 +0800</pubDate>
-      <guid>http://blog.yucapri.net/categories/%E6%97%A5%E5%B8%B8/</guid>
+      <guid>http://localhost:1313/categories/%E6%97%A5%E5%B8%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>学习</title>
-      <link>http://blog.yucapri.net/categories/%E5%AD%A6%E4%B9%A0/</link>
+      <link>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Mon, 08 Feb 2021 13:17:59 +0800</pubDate>
-      <guid>http://blog.yucapri.net/categories/%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
     </item>
   </channel>

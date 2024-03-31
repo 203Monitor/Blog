@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://blog.yucapri.net/tags/appwrite/</loc>
+    <loc>http://localhost:1313/tags/appwrite/</loc>
     <lastmod>2024-03-25T23:32:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/posts/2024-03-25-appwrite-appwrite%E4%BD%BF%E7%94%A8/</loc>
+    <loc>http://localhost:1313/posts/2024-03-25-appwrite-appwrite%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2024-03-25T23:32:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-03-25T23:32:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-03-25T23:32:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-03-25T23:32:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-03-25T23:32:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/categories/%E6%97%A5%E5%B8%B8/</loc>
+    <loc>http://localhost:1313/categories/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2024-03-25T23:32:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/tags/markdown/</loc>
+    <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2021-02-08T13:17:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/posts/2021-02-08-markdown-markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/</loc>
+    <loc>http://localhost:1313/posts/2021-02-08-markdown-markdown%E8%AF%AD%E6%B3%95%E4%B9%8B%E5%A4%8D%E9%80%89%E6%A1%86/</loc>
     <lastmod>2021-02-08T13:17:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-02-08T13:17:59+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
+    <loc>http://localhost:1313/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
     <lastmod>2016-05-21T11:30:42+08:00</lastmod>
   </url><url>
-    <loc>http://blog.yucapri.net/posts/2016-05-21-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%A4%A7%E6%95%99%E7%A8%8B%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</loc>
+    <loc>http://localhost:1313/posts/2016-05-21-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%A4%A7%E6%95%99%E7%A8%8B%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</loc>
     <lastmod>2016-05-21T11:30:42+08:00</lastmod>
   </url>
 </urlset>
